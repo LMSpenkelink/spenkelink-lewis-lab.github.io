@@ -1,8 +1,8 @@
 ---
 title: The lab has been awarded an ARC Discovery Project Grant!
 date: 2024-11-26
-image:
-  focal_point: 'top'
+# image:
+#  focal_point: 'top'
 ---
 
 How do mitochondria replicate their DNA? We are excited to share that our lab has been awarded an ARC Discovery Project Grant to tackle this fundamental question! Postdoc & PhD opportunities coming soon!

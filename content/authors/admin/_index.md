@@ -46,8 +46,8 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'lisanne@uow.edu.au'
-  - icon: bluesky_logo
-    icon_pack: custom
+  - icon: custom/bluesky_logo
+    icon_pack:
     link: lisannes.bsky.social
   - icon: google-scholar
     icon_pack: ai
