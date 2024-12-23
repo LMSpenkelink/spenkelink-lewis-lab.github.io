@@ -43,9 +43,6 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'jacobl@uow.edu.au'
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com.au/citations?user=LpTGaPwAAAAJ&hl=en
@@ -61,7 +58,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principle investigators
+  - Principal investigators
 ---
 
 Jacob Lewis was an EMBO and Marie Curie Fellow (2020-2024, Francis Crick Institute) and currently an ARC DECRA fellow and NHMRC Investigator (University of Wollongong). Dr Jacob Lewis leads a research group at Molecular Horizons research Institute. His research uses advanced cryo-electron microscopes alongside biochemical approaches and single-molecule imaging, to closely examine molecular machines in action, gaining insights into their normal operations and identifying malfunctions. He is particularly interested in deciphering how our chromosomes are duplicated, ensuring accurate genetic information transfer during cell division. This understanding aids in understanding how our DNA maintains its integrity and pinpointing disruptions that may lead to many different human diseases.

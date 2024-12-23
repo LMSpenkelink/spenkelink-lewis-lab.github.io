@@ -46,12 +46,15 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'lisanne@uow.edu.au'
-  - icon: Bluesky_logo
-    icon_pack: 
+  - icon: bluesky
+    icon_pack: fas
     link: lisannes.bsky.social
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com.au/citations?user=jW0LjqUAAAAJ&hl=en
+  - icon: orcid
+    icon_pack: fas
+    link: https://orcid.org/0000-0002-5511-8757
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
