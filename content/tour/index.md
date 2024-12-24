@@ -24,10 +24,10 @@ sections:
         background:
           image:
             filename: DNA_replication.jpg
-            # filters:
-            #   brightness: 0.7
+             filters:
+               brightness: 0.5
           position: right
-          color: '#555'
+          color: '#666'
       - title: Biosensing technologies
         content: 'We have developed a fluorescence-based sensor for biomolecule detection'
         align: right

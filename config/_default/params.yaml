@@ -34,7 +34,7 @@ marketing:
 header:
   navbar:
     enable: true
-    align: r
+    align: right
     show_logo: true
     show_language: false
     show_day_night: true
@@ -44,18 +44,18 @@ header:
 # Site footer
 
 footer:
-  copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+  # copyright:
+    text: 'We acknowledge the traditional custodians of the land on which our lab is situated, and pay our respect to Elders past, present & future.'
+    #license:
+    #  enable: true
+    #  allow_derivatives: false
+    #  share_alike: true
+    #  allow_commercial: false
 
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: '2 Jan, 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
