@@ -1,5 +1,5 @@
 ---
-title: "An example preprint / working paper"
+title: "Development of a generalisable tryptophan-optimised quenchbody biosensor based on a synthetic nanobody library"
 authors:
 - Jordan Cater
 - Nehad El Salamouni
@@ -46,12 +46,12 @@ links:
   url: https://www.biorxiv.org/content/10.1101/2024.03.27.582625v1.article-info
 url_pdf: https://www.biorxiv.org/content/10.1101/2024.03.27.582625v1.full.pdf
 url_code: ''
-url_dataset: '#'
-url_poster: '#'
+url_dataset: ''
+url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: '#'
-url_video: '#'
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -76,8 +76,8 @@ projects:
 slides: ""
 ---
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
+# {{% callout note %}}
+# Create your slides in Markdown - click the *Slides* button to check out the example.
+# {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+# Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, # and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

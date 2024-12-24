@@ -24,7 +24,7 @@ interests:
   - Single-molecule visualisation
   - DNA replication
   - Directed evolution
-  - Diagnostics
+  - Biosensing
 
 education:
   courses:
@@ -47,7 +47,7 @@ social:
     icon_pack: fas
     link: 'lisanne@uow.edu.au'
   - icon: bluesky
-    icon_pack: brands
+    icon_pack: fab
     link: lisannes.bsky.social
   - icon: google-scholar
     icon_pack: ai
@@ -56,7 +56,7 @@ social:
     icon_pack: ai
     link: https://orcid.org/0000-0002-5511-8757
   - icon: linkedin
-    icon_pack: brands
+    icon_pack: fab
     link: https://www.linkedin.com/in/lisannespenkelink
 
 # Link to a PDF of your resume/CV from the About widget.
