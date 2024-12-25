@@ -26,7 +26,7 @@ sections:
             filename: DNA_replication.jpg
             filters:
               brightness: 0.7
-            size: cover  
+            size: contain 
           position: right
           color: '#666'
       - title: Biosensing technologies
@@ -37,6 +37,7 @@ sections:
             filename: biosensing.jpg
             filters:
               brightness: 0.7
+            size: contain
           position: center
           color: '#333'
         # link:
