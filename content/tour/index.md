@@ -23,7 +23,7 @@ sections:
         align: right
         background:
           image:
-            filename: welcome.jpg
+            filename: DNA_replication.jpg
             filters:
               brightness: 0.7
           position: right
