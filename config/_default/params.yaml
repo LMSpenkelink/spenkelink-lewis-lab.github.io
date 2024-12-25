@@ -36,6 +36,7 @@ header:
     enable: true
     align: right
     show_logo: true
+      filename: icon.jpg
     show_language: false
     show_day_night: true
     show_search: true
