@@ -35,8 +35,9 @@ header:
   navbar:
     enable: true
     align: right
+    logo:
+      filename: logo.jpg
     show_logo: true
-      filename: icon.jpg
     show_language: false
     show_day_night: true
     show_search: true
