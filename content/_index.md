@@ -34,27 +34,27 @@ sections:
       page_type: post
     design:
       view: card
-      columns: '1'
+      columns: '2'
   
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+  #- block: markdown
+  #  content:
+  #    title:
+  #    subtitle: ''
+  #    text:
+  #  design:
+  #    columns: '1'
+  #    background:
+  #      image: 
+  #        filename: coders.jpg
+  #        filters:
+  #          brightness: 1
+  #        parallax: false
+  #        position: center
+  #        size: cover
+  #        text_color_light: true
+  #    spacing:
+  #      padding: ['20px', '0', '20px', '0']
+  #    css_class: fullscreen
 
   - block: collection
     content:
