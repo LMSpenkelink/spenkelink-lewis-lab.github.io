@@ -23,9 +23,9 @@ sections:
         align: right
         background:
           image:
-            filename: DNA_replication.jpg
+            filename: welcome.jpg
              filters:
-               brightness: 0.5
+               brightness: 0.7
           position: right
           color: '#666'
       - title: Biosensing technologies
