@@ -24,8 +24,8 @@ sections:
         background:
           image:
             filename: DNA_replication.jpg
-            filters:
-              brightness: 1.0
+            #filters:
+            #  brightness: 1.0
             size: contain 
           position: left
           color: '#666'
