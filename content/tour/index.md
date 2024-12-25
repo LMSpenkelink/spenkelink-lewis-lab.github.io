@@ -24,8 +24,8 @@ sections:
         background:
           image:
             filename: welcome.jpg
-             filters:
-               brightness: 0.7
+            filters:
+              brightness: 0.7
           position: right
           color: '#666'
       - title: Biosensing technologies
