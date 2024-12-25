@@ -44,8 +44,8 @@ header:
 # Site footer
 
 footer:
-  # copyright:
-    text: 'We acknowledge the traditional custodians of the land on which our lab is situated, and pay our respect to Elders past, present & future.'
+   copyright:
+    notice: 'We acknowledge the traditional custodians of the land on which our lab is situated, and pay our respect to Elders past, present & future.'
     #license:
     #  enable: true
     #  allow_derivatives: false
