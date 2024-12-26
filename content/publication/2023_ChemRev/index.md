@@ -4,9 +4,9 @@ authors:
 - Jacob Lewis
 - Antoine van Oijen
 - admin
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
+#author_notes:
+#- "Equal contribution"
+#- "Equal contribution"
 date: "2023-11-16T00:00:00Z"
 doi: "10.1021/acs.chemrev.3c00436"
 

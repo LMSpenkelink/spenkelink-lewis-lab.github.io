@@ -40,7 +40,7 @@ sections:
 
   - block: collection
     content:
-      title: Latest Preprints
+      title: Latest Papers
       text: ""
       count: 5
       filters:
