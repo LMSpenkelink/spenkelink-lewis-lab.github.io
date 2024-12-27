@@ -28,7 +28,7 @@ sections:
             #  brightness: 1.0
             size: contain 
           position: left
-          color: '#666'
+          color: '#000'
       - title: Biosensing technologies
         content: 'We develop a fluorescence-based sensor for biomolecule detection'
         align: right
@@ -39,7 +39,7 @@ sections:
               brightness: 0.7
             size: contain
           position: center
-          color: '#333'
+          color: '#666'
         # link:
         #  icon: graduation-cap
         #  icon_pack: fas
