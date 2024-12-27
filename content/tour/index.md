@@ -29,6 +29,7 @@ sections:
             size: contain 
           position: left
           color: '#000'
+        color: '#000'
       - title: Biosensing technologies
         content: 'We develop a fluorescence-based sensor for biomolecule detection'
         align: right
