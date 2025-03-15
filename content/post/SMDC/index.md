@@ -1,6 +1,6 @@
 ---
 title: Nicholas Kusi-Appauh presents at the Single-molecule Discussion club!
-date: 2024-12-10
+date: 2025-01-31
 ---
 
 Nick was invited to present his work on the development of a method to visualise the behaviour of DNA polymerases upon encountering a G-quadruplex.
