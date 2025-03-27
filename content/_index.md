@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Spenkelink – Lewis Research Group** aims to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
+        The **Spenkelink & Lewis labs** aim to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
   
   - block: collection
     content:
