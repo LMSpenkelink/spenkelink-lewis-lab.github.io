@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Spenkelink – Lewis research group # Website name
+title: Spenkelink & Lewis labs # Website name
 baseURL: 'spenkelink-lewis-labs.com' # Website URL
 
 ############################
