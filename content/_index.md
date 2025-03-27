@@ -8,8 +8,8 @@ sections:
   - block: hero
     content:
       title: |
-        Spenkelink – Lewis
-        Research Group
+        Spenkelink & Lewis
+        labs
       image:
         filename: pretty.jpg
       text: |
