@@ -18,7 +18,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research focusses on the development and use of single-molecule visualisation methods to study complex biological systems.
+bio: My research focusses on the development and use of single-molecule visualisation methods to study dynamics in complex biological systems.
 
 interests:
   - Single-molecule visualisation
