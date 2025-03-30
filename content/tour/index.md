@@ -34,7 +34,7 @@ sections:
         #color:rgb(0, 0, 0)
       - title: Mitochondrial DNA replication
         content: 'Mitochondria contain their own genomes — and their own replication system. We study how the mitochondrial replisome copies its genome, and we are trying to understand how mutant proteins associated with human disease affect this process.'
-          color: #000000 
+        color: #000000 
         align: right
         background:
           image:
