@@ -8,7 +8,7 @@ sections:
   - block: slider
     content:
       slides:
-      #theme: white # Reveal JS theme name
+        theme: white # Reveal JS theme name
       #highlight_style: github # Highlight JS theme name
       - title: 👋 Welcome to the group
         content: Take a look at what we're working on...
@@ -28,7 +28,7 @@ sections:
             filename: Replisome.png
             filters:
               brightness: 0.7
-            size: 730px
+            size: 710px
             position: left
           color: #000000
         #color:rgb(0, 0, 0)
@@ -65,7 +65,7 @@ sections:
           image:
             filename: biosensing.png
             filters:
-              brightness: 0.2
+              brightness: 0.7
             size: contain
             position: left
           color:  #000000
