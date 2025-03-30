@@ -57,6 +57,7 @@ sections:
       - title: Fluorescent biosensors for diagnostics
         content: 'We design biosensors that become fluorescent in response to specific biomolecules, enabling real-time detection. Our nanobody-based sensors are easily customisable and allow for rapid detection of antigens. We can adapt them to be suitable for single-molecule measurements, allowing detection down to <0.1 pg/ml.'
         align: right
+        class: background-left
         background:
           image:
             filename: biosensing.png
@@ -64,7 +65,7 @@ sections:
               brightness: 0.7
             size: contain
           position: center
-          color:  #ffffff
+          color:  #000000
         #color: rgb(0, 0, 0)
         # link:
         #  icon: graduation-cap
