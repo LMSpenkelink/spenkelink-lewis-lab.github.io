@@ -27,7 +27,7 @@ sections:
           image:
             filename: Replisome.png
             filters:
-              brightness: 0.7
+              brightness: 0.5
             size: cover
           position: left
           color: #ffffff
@@ -39,8 +39,8 @@ sections:
           image:
             filename: mito.png
             filters:
-              brightness: 0.7
-            size: contain
+              brightness: 0.5
+            size: cover
           position: left
           color:  #ffffff
         #color: rgb(0, 0, 0)
@@ -51,8 +51,8 @@ sections:
           image:
             filename: smde.png
             filters:
-              brightness: 0.7
-            size: contain
+              brightness: 0.5
+            size: cover
           position: center
           color:  #ffffff
         #color: rgb(0, 0, 0)
@@ -64,8 +64,8 @@ sections:
           image:
             filename: biosensing.png
             filters:
-              brightness: 0.7
-            size: 10px
+              brightness: 0.5
+            size: cover
           position: left
           color:  #000000
         #color: rgb(0, 0, 0)
