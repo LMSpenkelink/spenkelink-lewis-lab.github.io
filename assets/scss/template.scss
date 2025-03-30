@@ -8,12 +8,8 @@
   justify-content: center;
 }
 
-.slide.background-left {
+.carousel-item.background-left {
   background-position: left center !important;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body {
-  border: 5px solid red;
 }
