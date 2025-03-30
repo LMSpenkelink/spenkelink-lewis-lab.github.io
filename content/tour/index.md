@@ -30,7 +30,7 @@ sections:
               brightness: 0.5
             size: cover
           position: left
-          color: #ffffff
+          color: #000000
         #color:rgb(0, 0, 0)
       - title: Mitochondrial DNA replication
         content: 'Mitochondria contain their own genomes — and their own replication system. We study how the mitochondrial replisome copies its genome, and we are trying to understand how mutant proteins associated with human disease affect this process.'
@@ -42,7 +42,7 @@ sections:
               brightness: 0.5
             size: cover
           position: left
-          color:  #ffffff
+          color:  #000000
         #color: rgb(0, 0, 0)
       - title: Single-molecule directed evolution
         content: 'We develop directed-evolution methods that allow for screening and selection at the single-molecule level — allowing us to evolve new molecular functions with ultra-high sensitivity. Our system combines fluorescence-based selection with DNA-encoded libraries and microfluidics to track evolution in real time, one molecule at a time.'
@@ -51,10 +51,10 @@ sections:
           image:
             filename: smde.png
             filters:
-              brightness: 0.5
+              brightness: 0.7
             size: cover
           position: center
-          color:  #ffffff
+          color:  #000000
         #color: rgb(0, 0, 0)
       - title: Fluorescent biosensors for diagnostics
         content: 'We design biosensors that become fluorescent in response to specific biomolecules, enabling real-time detection. Our nanobody-based sensors are easily customisable and allow for rapid detection of antigens. We can adapt them to be suitable for single-molecule measurements, allowing detection down to <0.1 pg/ml.'
