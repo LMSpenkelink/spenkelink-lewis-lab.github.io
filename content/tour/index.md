@@ -9,7 +9,7 @@ sections:
     content:
       slides:
       theme: white # Reveal JS theme name
-      highlight_style: github # Highlight JS theme name
+      #highlight_style: github # Highlight JS theme name
       - title: 👋 Welcome to the group
         content: Take a look at what we're working on...
         align: center
