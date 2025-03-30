@@ -116,3 +116,8 @@ extensions:
 publications:
   date_format: January 2006
   citation_style: apa
+
+#assets
+assets:
+  custom_scss:
+    - scss/custom.scss
