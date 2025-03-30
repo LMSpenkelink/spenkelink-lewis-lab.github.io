@@ -121,3 +121,5 @@ publications:
 assets:
   custom_scss:
     - scss/custom.scss
+  custom_js:
+    - js/fix-background.js
