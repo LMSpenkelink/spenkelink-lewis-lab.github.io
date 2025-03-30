@@ -28,8 +28,8 @@ sections:
             filename: Replisome.png
             filters:
               brightness: 0.2
-            size: cover
-          position: left
+            size: 800px
+            position: left
           color: #000000
         #color:rgb(0, 0, 0)
       - title: Mitochondrial DNA replication
@@ -40,7 +40,7 @@ sections:
             filename: mito.png
             filters:
               brightness: 0.5
-            size: 700px
+            size: 800px
             position: left
           color:  #000000
         #color: rgb(0, 0, 0)
@@ -52,8 +52,8 @@ sections:
             filename: smde.png
             filters:
               brightness: 0.7
-            size: cover
-          position: center
+            size: contain
+            position: left
           color:  #000000
         #color: rgb(0, 0, 0)
       - title: Fluorescent biosensors for diagnostics
@@ -65,8 +65,8 @@ sections:
             filename: biosensing.png
             filters:
               brightness: 0.2
-            size: cover
-          position: left
+            size: contain
+            position: left
           color:  #000000
         #color: rgb(0, 0, 0)
         # link:
