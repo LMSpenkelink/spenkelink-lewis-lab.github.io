@@ -63,7 +63,7 @@ sections:
             filename: biosensing.png
             filters:
               brightness: 0.7
-            size: contain
+            size: 50%
           position: left
           color:  #000000
         #color: rgb(0, 0, 0)
