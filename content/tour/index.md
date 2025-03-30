@@ -8,7 +8,7 @@ sections:
   - block: slider
     content:
       slides:
-      theme: white # Reveal JS theme name
+      #theme: white # Reveal JS theme name
       #highlight_style: github # Highlight JS theme name
       - title: 👋 Welcome to the group
         content: Take a look at what we're working on...
@@ -19,7 +19,7 @@ sections:
             filters:
               brightness: 0.7
           position: right
-          color: #ffffff
+          color: #000000
       - title: DNA replication at roadblocks
         content: 'What happens when the replisome encounters a roadblock? We use cryo-EM and single-molecule imaging to reveal how the human and bacterial replication systems deal with DNA damage and secondary DNA structures.'
         align: right
