@@ -40,7 +40,7 @@ sections:
             filename: mito.png
             filters:
               brightness: 0.5
-            size: cover
+            size: 1000px
           position: left
           color:  #000000
         #color: rgb(0, 0, 0)
@@ -64,7 +64,7 @@ sections:
           image:
             filename: biosensing.png
             filters:
-              brightness: 0.5
+              brightness: 0.3
             size: cover
           position: left
           color:  #000000
