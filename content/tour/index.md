@@ -8,7 +8,7 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the groups
+      - title: 👋 Welcome to the group
         content: Take a look at what we're working on...
         align: center
         background:
@@ -17,7 +17,7 @@ sections:
             filters:
               brightness: 0.7
           position: right
-          color: '#666'
+          color: #ffffff
       - title: DNA replication at roadblocks
         content: 'What happens when the replisome encounters a roadblock? We use cryo-EM and single-molecule imaging to reveal how the human and bacterial replication systems deal with DNA damage and secondary DNA structures.'
         align: right
@@ -28,8 +28,8 @@ sections:
             #  brightness: 1.0
             size: contain 
           position: left
-          color: '#000'
-        color: '#fff'
+          color: #ffffff
+        color: #ffffff
       - title: Mitochondrial DNA replication
         content: 'Mitochondria contain their own genomes — and their own replication system. We study how the mitochondrial replisome copies its genome, and we are trying to understand how mutant proteins associated with human disease affect this process.'
         align: right
@@ -40,7 +40,7 @@ sections:
               brightness: 0.7
             size: contain
           position: center
-          color: '#fff'
+          color:  #ffffff
       - title: Single-molecule directed evolution
         content: 'We develop directed-evolution methods that allow for screening and selection at the single-molecule level — allowing us to evolve new molecular functions with ultra-high sensitivity. Our system combines fluorescence-based selection with DNA-encoded libraries and microfluidics to track evolution in real time, one molecule at a time.'
         align: right
@@ -51,7 +51,7 @@ sections:
               brightness: 0.7
             size: contain
           position: center
-          color: '#fff'
+          color:  #ffffff
       - title: Fluorescent biosensors for diagnostics
         content: 'We design biosensors that become fluorescent in response to specific biomolecules, enabling real-time detection. Our nanobody-based sensors are easily customisable and allow for rapid detection of antigens. We can adapt them to be suitable for single-molecule measurements, allowing detection down to <0.1 pg/ml.'
         align: right
@@ -62,7 +62,7 @@ sections:
               brightness: 0.7
             size: contain
           position: center
-          color: '#fff'    
+          color:  #ffffff
         # link:
         #  icon: graduation-cap
         #  icon_pack: fas
