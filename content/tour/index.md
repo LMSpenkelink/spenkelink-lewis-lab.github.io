@@ -64,7 +64,7 @@ sections:
             filters:
               brightness: 0.7
             size: contain
-          position: center
+          position: left
           color:  #000000
         #color: rgb(0, 0, 0)
         # link:

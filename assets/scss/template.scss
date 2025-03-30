@@ -8,8 +8,6 @@
   justify-content: center;
 }
 
-.carousel-item.background-left {
+.carousel-item.background-left[style*="background-image"] {
   background-position: left center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
