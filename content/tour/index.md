@@ -27,20 +27,21 @@ sections:
           image:
             filename: Replisome.png
             filters:
-              brightness: 0.2
-            size: 800px
+              brightness: 1.0
+            size: 750px
             position: left
           color: #000000
         #color:rgb(0, 0, 0)
       - title: Mitochondrial DNA replication
         content: 'Mitochondria contain their own genomes — and their own replication system. We study how the mitochondrial replisome copies its genome, and we are trying to understand how mutant proteins associated with human disease affect this process.'
+        color: #000000 
         align: right
         background:
           image:
             filename: mito.png
             filters:
-              brightness: 0.5
-            size: 800px
+              brightness: 1.0
+            size: 900px
             position: left
           color:  #000000
         #color: rgb(0, 0, 0)
@@ -51,8 +52,8 @@ sections:
           image:
             filename: smde.png
             filters:
-              brightness: 0.7
-            size: contain
+              brightness: 1.0
+            size: cover
             position: left
           color:  #000000
         #color: rgb(0, 0, 0)
