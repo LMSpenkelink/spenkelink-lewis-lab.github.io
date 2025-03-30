@@ -26,9 +26,9 @@ sections:
         background:
           image:
             filename: Replisome.png
-            #filters:
-            #  brightness: 1.0
-            size: contain 
+            filters:
+              brightness: 0.7
+            size: cover
           position: left
           color: #ffffff
         #color:rgb(0, 0, 0)
