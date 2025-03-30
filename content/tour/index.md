@@ -27,7 +27,7 @@ sections:
             #filters:
             #  brightness: 1.0
             size: contain 
-          align: left
+          position: left
           color: #ffffff
         color:rgb(0, 0, 0)
       - title: Mitochondrial DNA replication
