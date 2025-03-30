@@ -27,7 +27,7 @@ sections:
           image:
             filename: Replisome.png
             filters:
-              brightness: 0.5
+              brightness: 0.2
             size: cover
           position: left
           color: #000000
@@ -40,8 +40,8 @@ sections:
             filename: mito.png
             filters:
               brightness: 0.5
-            size: 1000px
-          position: left
+            size: 700px
+            position: left
           color:  #000000
         #color: rgb(0, 0, 0)
       - title: Single-molecule directed evolution
@@ -64,7 +64,7 @@ sections:
           image:
             filename: biosensing.png
             filters:
-              brightness: 0.3
+              brightness: 0.2
             size: cover
           position: left
           color:  #000000
