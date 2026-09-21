@@ -25,7 +25,7 @@ organizations:
 bio: I am developing single-molecule tools for directed evolution of biosensors.
 
 interests:
-  - Directed Evolution
+  - Directed evolution
   - Diagnostics
   - Nanobodies
 
@@ -34,9 +34,9 @@ education:
     #- course: PhD in Biochemistry
     #  institution: University of Wollongong
     #  year: 2017
-    #- course: BSc in Medical Biotechnology (Honours Class I)
-    #  institution: University of Wollongong
-    #  year: 2022
+    - course: Bachelor of Medical Biotechnology (Honours)
+      institution: University of Wollongong
+      year: 2023
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
