@@ -34,7 +34,7 @@ education:
     - course: PhD in Structural and Molecular Biology
       institution: University of Wollongong
       year: 2025
-    - course: BSc in Medical Biotechnology (Honours Class I) (Dean's Scholar)
+    - course: Bachelor of Medical Biotechnology (Honours Class I) (Dean's Scholar)
       institution: University of Wollongong
       year: 2020
 
