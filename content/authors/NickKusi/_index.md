@@ -4,7 +4,7 @@ title: Nicholas Kusi-Appauh
 
 # Full name (for SEO)
 first_name: Nicholas
-last_name: Kusi-Appau
+last_name: Kusi-Appauh
 
 # Username (this should match the folder name)
 authors:
