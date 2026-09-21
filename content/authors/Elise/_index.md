@@ -30,9 +30,9 @@ interests:
 
 education:
   courses:
-    #- course: PhD in Biochemistry
-    #  institution: University of Wollongong
-    #  year: 2017
+    - course: PhD in Single-Molecule Biophysics
+      institution: University of Wollongong
+      year: 2026
     - course: Bachelor of Medical Biotechnology (Honours Class I)
       institution: University of Wollongong
       year: 2021
