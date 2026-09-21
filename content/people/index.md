@@ -15,6 +15,7 @@ sections:
           - Postdoctoral researchers
           - PhD students
           - Undergraduates
+          - Lab Manager
           - Alumni
       sort_by: Params.last_name
       sort_ascending: true
