@@ -31,10 +31,10 @@ interests:
 
 education:
   courses:
-    #- course: PhD in Cell and Molecular Biology
-    #  institution: University of Wollongong
-    #  year: 2021
-    - course: BSc in Medical Biotechnology (Honours Class I)
+    - course: PhD in Structural and Molecular Biology
+      institution: University of Wollongong
+      year: 2025
+    - course: BSc in Medical Biotechnology (Honours Class I) (Dean's Scholar)
       institution: University of Wollongong
       year: 2020
 
