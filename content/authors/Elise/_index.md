@@ -33,7 +33,7 @@ education:
     #- course: PhD in Biochemistry
     #  institution: University of Wollongong
     #  year: 2017
-    - course: BSc in Medical Biotechnology (Honours Class I)
+    - course: Bachelor of Medical Biotechnology (Honours Class I)
       institution: University of Wollongong
       year: 2021
 
@@ -44,7 +44,7 @@ education:
 social:
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/elise-wilkinson
+    link: https://www.linkedin.com/in/elise-wilkinson-2b5a69161/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
