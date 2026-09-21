@@ -46,12 +46,12 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  #- icon: google-scholar
-  #  icon_pack: ai
-  #  link: https://scholar.google.com/citations?user=bw8dOakAAAAJ&hl=en
-  #- icon: orcid
-  #  icon_pack: ai
-  #  link: https://orcid.org/0000-0003-3608-929X
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=uJKuxR8AAAAJ&hl=en
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-9621-2555
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/thilini-surenika-munasinghe-819150b6/details/education/
