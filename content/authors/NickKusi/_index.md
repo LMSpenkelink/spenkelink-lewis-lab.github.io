@@ -31,10 +31,10 @@ interests:
 
 education:
   courses:
-    - course: PhD in Biophysics
+    - course: PhD in Single-Molecule Biophysics
       institution: University of Wollongong
       year: 2026
-    - course: Bachelor of Science - Chemistry (Honours Class I) (Dean's Scholar)
+    - course: BSc in Chemistry (Honours Class I) (Dean's Scholar)
       institution: University of Wollongong
       year: 2021
 
