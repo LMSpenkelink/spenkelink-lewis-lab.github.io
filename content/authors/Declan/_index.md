@@ -34,9 +34,9 @@ education:
     #- course: PhD in Biochemistry
     #  institution: University of Wollongong
     #  year: 2017
-    #- course: BSc in Medical Biotechnology (Honours Class I)
-    #  institution: University of Wollongong
-    #  year: 2022
+    - course: Master of Biology and Bachelor of Science (Class I)
+      institution: University of Leeds
+      year: 2023
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
