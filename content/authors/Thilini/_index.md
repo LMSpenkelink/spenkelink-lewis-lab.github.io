@@ -25,19 +25,19 @@ organizations:
 bio: I work on the cryo-EM and single-molecule visualisation of human mitochondrial DNA replication.
 
 interests:
-  - DNA replication
-  - Cryo-EM
-  - Mitochondria
+  - Mitochondrial DNA replication
+  - Structural & molecular biology of therapeutic targets
+  - Transnational research for global health
 
 education:
   courses:
-    - course: PhD in Structural Biology
+    - course: PhD in Biochemistry and Cell Biology
       institution: Charles Sturt University
       year: 2024
-    - course: Master of Science
+    - course: MSc in Medical Microbiology
       institution: University of Peradeniya
-      year: 2018
-    - course: Bachelor of Botany/Plant Biology
+      year: 2019
+    - course: BSc in Botany/Plant Sciences
       institution: University of Peradeniya
       year: 2015      
 
