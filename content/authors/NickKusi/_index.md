@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD student
+role: Laboratory Operations Manager
 
 # Organizations/Affiliations
 organizations:
@@ -31,12 +31,12 @@ interests:
 
 education:
   courses:
-    #- course: PhD in Biochemistry
+    #- course: PhD in Biophysics
     #  institution: University of Wollongong
     #  year: 2017
-    - course: BSc in Medical Biotechnology (Honours Class I)
+    - course: Bachelor of Science - Chemistry (Honours Class I) (Dean's Scholar)
       institution: University of Wollongong
-      year: 2022
+      year: 2021
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
