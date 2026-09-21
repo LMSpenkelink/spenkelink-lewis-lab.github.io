@@ -26,8 +26,8 @@ bio: I work on the cryo-EM and single-molecule visualisation of human mitochondr
 
 interests:
   - Mitochondrial DNA replication
-  - Structural & molecular biology of therapeutic targets
-  - Transnational research for global health
+  - Therapeutic targets
+  - Global health
 
 education:
   courses:
