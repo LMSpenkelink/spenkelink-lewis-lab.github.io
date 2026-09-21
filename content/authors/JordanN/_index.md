@@ -67,4 +67,4 @@ user_groups:
   - Postdoctoral researchers
 ---
 
-Jordan Nicholls recently joined the lab to spearhead our efforts to visualise human DNA replication through cryo-EM and at the single-molecule level.
+Jordan recently is working on visualising human DNA replication through cryo-EM and at the single-molecule level.
