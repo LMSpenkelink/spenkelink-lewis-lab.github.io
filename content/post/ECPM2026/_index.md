@@ -1,5 +1,5 @@
 ---
-title: Jordan Nicholls receives ASBMB–KSBMB award at ECPM 2026
+title: Jordan Nicholls receives best talk award at ECPM 2026
 date: 2026-07-24
 ---
 
