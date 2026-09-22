@@ -62,4 +62,5 @@ user_groups:
 ---
 
 Nicholas obtained his PhD in 2026, working under the supervision of Lisanne and Jacob. His research focused on DNA replication roadblocks and replisome dynamics, as revealed by single-molecule techniques. 
+
 He now manages the day-to-day operations of the lab, supporting research activities, laboratory infrastructure and the wider research team.
