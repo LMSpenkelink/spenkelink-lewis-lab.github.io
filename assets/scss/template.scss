@@ -17,14 +17,16 @@
 // PEOPLE PAGE REDESIGN
 // ==========================================
 
-// ----- Section spacing -----
+
+// ==========================================
+// SECTION SPACING + HEADINGS
+// ==========================================
 
 .people-widget {
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
-// Section headings
 .people-widget h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -39,11 +41,12 @@
 // PERSON CARDS
 // ==========================================
 
-.people-person {
+.people-widget .people-person {
   background: #ffffff;
   border-radius: 16px;
-  padding: 1.75rem 1.25rem;
-  margin-bottom: 2rem;
+
+  padding: 1.75rem 1.5rem;
+  margin: 0.75rem;
 
   box-shadow:
     0 2px 8px rgba(0, 0, 0, 0.04),
@@ -54,8 +57,7 @@
     box-shadow 0.2s ease;
 }
 
-// Lift card on hover
-.people-person:hover {
+.people-widget .people-person:hover {
   transform: translateY(-5px);
 
   box-shadow:
@@ -68,39 +70,49 @@
 // PROFILE PHOTOS
 // ==========================================
 
-.people-person .avatar {
-  width: 165px;
-  height: 165px;
+.people-widget .people-person .avatar {
+  width: 180px;
+  max-width: none;
+  height: 180px;
+
   object-fit: cover;
   border-radius: 50%;
+
   margin-bottom: 1rem;
 
   transition: transform 0.2s ease;
 }
 
-.people-person:hover .avatar {
+.people-widget .people-person:hover .avatar {
   transform: scale(1.03);
 }
 
 
 // ==========================================
-// NAMES + ROLES
+// NAMES
 // ==========================================
 
-.people-person h3 {
+.people-widget .people-person h3 {
   font-size: 1.25rem;
   font-weight: 700;
+
   margin-top: 0.8rem;
   margin-bottom: 0.2rem;
 }
 
-.people-person .portrait-title {
+
+// ==========================================
+// ROLE / POSITION
+// ==========================================
+
+.people-widget .people-person .portrait-title {
   margin-top: 0;
 }
 
-.people-person .portrait-title h3 + p {
+.people-widget .people-person .portrait-title h3 + p {
   font-size: 0.95rem;
-  opacity: 0.7;
+  opacity: 0.72;
+
   margin-bottom: 0.8rem;
 }
 
@@ -109,19 +121,20 @@
 // RESEARCH INTERESTS
 // ==========================================
 
-// Container
-.people-person .interests {
+.people-widget .people-person .interests {
   margin-top: 1rem;
   margin-bottom: 1rem;
+
   padding: 0;
   list-style: none;
 }
 
-// Turn individual interests into pills
-.people-person .interests li {
+.people-widget .people-person .interests li {
   display: inline-block;
 
   background: #eef4f8;
+  color: #365b78;
+
   border-radius: 999px;
 
   padding: 0.35rem 0.75rem;
@@ -129,8 +142,6 @@
 
   font-size: 0.82rem;
   line-height: 1.3;
-
-  color: #365b78;
 }
 
 
@@ -138,20 +149,20 @@
 // SOCIAL ICONS
 // ==========================================
 
-.people-person .network-icon {
+.people-widget .people-person .network-icon {
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
-.people-person .network-icon li {
+.people-widget .people-person .network-icon li {
   margin: 0 0.3rem;
 }
 
-.people-person .network-icon a {
+.people-widget .people-person .network-icon a {
   transition: transform 0.2s ease;
 }
 
-.people-person .network-icon a:hover {
+.people-widget .people-person .network-icon a:hover {
   transform: translateY(-2px);
 }
 
@@ -167,12 +178,14 @@
     margin-top: 3rem;
   }
 
-  .people-person {
+  .people-widget .people-person {
     padding: 1.5rem 1rem;
+    margin: 0.75rem 0;
   }
 
-  .people-person .avatar {
+  .people-widget .people-person .avatar {
     width: 145px;
     height: 145px;
+    max-width: none;
   }
 }
