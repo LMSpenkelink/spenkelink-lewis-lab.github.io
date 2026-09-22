@@ -189,3 +189,15 @@
     max-width: none;
   }
 }
+
+// ==========================================
+// THREE-COLUMN PEOPLE GRID
+// ==========================================
+
+@media (min-width: 768px) {
+  .people-widget .people-person {
+    width: calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+}
