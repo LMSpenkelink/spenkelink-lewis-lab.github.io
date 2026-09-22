@@ -1,4 +1,4 @@
----
+<img width="511" height="896" alt="image" src="https://github.com/user-attachments/assets/cfd1c950-46fc-42be-99ab-fba8d909cbe4" />---
 # Leave the homepage title empty to use the site title
 title:
 date: 2024-12-23
@@ -16,6 +16,49 @@ sections:
         <br>
         
         The **Spenkelink & Lewis labs** aim to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
+
+   - block: markdown
+    content:
+      title: Our Research
+      subtitle: ''
+      text: |
+        <div class="research-grid">
+
+          <div class="research-card">
+            <img src="/media/Replisome.png" alt="DNA replication at roadblocks">
+            <div class="research-card-content">
+              <h3>DNA replication at roadblocks</h3>
+              <p>We use cryo-EM and single-molecule imaging to reveal how human and bacterial replisomes overcome DNA damage and secondary DNA structures.</p>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <img src="/media/mito.png" alt="Mitochondrial DNA replication">
+            <div class="research-card-content">
+              <h3>Mitochondrial DNA replication</h3>
+              <p>We study how the mitochondrial replisome copies its genome and how disease-associated mutant proteins affect this process.</p>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <img src="/media/smde.png" alt="Single-molecule directed evolution">
+            <div class="research-card-content">
+              <h3>Single-molecule directed evolution</h3>
+              <p>We develop methods for screening and selection at the single-molecule level to evolve new molecular functions with ultra-high sensitivity.</p>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <img src="/media/biosensing.png" alt="Fluorescent biosensors for diagnostics">
+            <div class="research-card-content">
+              <h3>Fluorescent biosensors for diagnostics</h3>
+              <p>We design customisable fluorescent biosensors for rapid, highly sensitive detection of specific biomolecules.</p>
+            </div>
+          </div>
+
+        </div>
+    design:
+      columns: '1'   
   
   - block: collection
     content:
