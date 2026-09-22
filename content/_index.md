@@ -16,28 +16,8 @@ sections:
         <br>
         
         The **Spenkelink & Lewis labs** aim to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
-  
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
-    design:
-      view: showcase
-      flip_alt_rows: true
-    #  columns: '2'
 
-      - block: markdown
+  - block: markdown
     content:
       title: Our Research
       subtitle: ''
@@ -79,7 +59,26 @@ sections:
         </div>
     design:
       columns: '1'
-  
+
+  - block: collection
+    content:
+      title: Latest News
+      subtitle:
+      text:
+      count: 5
+      filters:
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: post
+    design:
+      view: showcase
+      flip_alt_rows: true
+    #  columns: '2'
 
   - block: collection
     content:
@@ -102,7 +101,7 @@ sections:
     design:
       columns: '1'
       background:
-        image: 
+        image:
           filename: lasers.jpg
           filters:
             brightness: 1
@@ -112,7 +111,7 @@ sections:
           text_color_light: true
       spacing:
         padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen    
+      css_class: fullscreen
 
   #- block: markdown
   #  content:
