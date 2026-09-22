@@ -112,6 +112,32 @@
 }
 
 // ==========================================
+// PROFILE CONTENT ORDER
+// ==========================================
+
+.people-widget .people-person .portrait-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-widget .people-person .portrait-title h2 {
+  order: 1;
+}
+
+.people-widget .people-person .portrait-title h3 {
+  order: 2;
+}
+
+.people-widget .people-person .people-interests {
+  order: 3;
+}
+
+.people-widget .people-person .network-icon {
+  order: 4;
+}
+
+// ==========================================
 // RESEARCH INTERESTS
 // ==========================================
 
@@ -148,8 +174,8 @@
 // ==========================================
 
 .people-widget .people-person .network-icon {
-  margin-top: 0.1rem;
-  margin-bottom: 0.35rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.05;
   padding: 0;
 }
 
