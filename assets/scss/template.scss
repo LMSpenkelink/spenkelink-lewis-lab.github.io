@@ -312,3 +312,83 @@
     height: 220px;
   }
 }
+
+// ==========================================
+// NEWS PAGE CARDS
+// ==========================================
+
+// Individual news card
+.stream-item.view-compact {
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  align-items: center;
+}
+
+// Hover effect
+.stream-item.view-compact:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.06),
+    0 14px 32px rgba(0, 0, 0, 0.11);
+}
+
+// Text area
+.stream-item.view-compact .media-body {
+  padding-right: 1.5rem;
+}
+
+// News title
+.stream-item.view-compact .article-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+// Summary
+.stream-item.view-compact .article-style {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+// Featured image
+.stream-item.view-compact .ml-3 {
+  margin-left: 1.5rem !important;
+}
+
+.stream-item.view-compact img {
+  width: 190px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .stream-item.view-compact {
+    padding: 1.25rem;
+  }
+
+  .stream-item.view-compact img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .stream-item.view-compact .article-title {
+    font-size: 1.1rem;
+  }
+}
