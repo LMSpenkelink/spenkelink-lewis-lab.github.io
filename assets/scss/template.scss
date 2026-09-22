@@ -78,7 +78,7 @@
   object-fit: cover;
   border-radius: 50%;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 
   transition: transform 0.2s ease;
 }
@@ -105,9 +105,10 @@
   font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.35;
+  color: #555;
   opacity: 1;
   margin-top: 0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.35rem;
 }
 
 // ==========================================
@@ -143,8 +144,8 @@
 // ==========================================
 
 .people-widget .people-person .network-icon {
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.35rem;
   padding: 0;
 }
 
