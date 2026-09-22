@@ -1,4 +1,3 @@
-<img width="511" height="896" alt="image" src="https://github.com/user-attachments/assets/cfd1c950-46fc-42be-99ab-fba8d909cbe4" />---
 # Leave the homepage title empty to use the site title
 title:
 date: 2024-12-23
