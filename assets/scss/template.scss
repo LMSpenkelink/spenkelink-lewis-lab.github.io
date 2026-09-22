@@ -17,102 +17,151 @@
 // PEOPLE PAGE REDESIGN
 // ==========================================
 
-// More space around the overall people section
+// ----- Section spacing -----
+
 .people-widget {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
-// Group headings
+// Section headings
 .people-widget h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(25, 70, 110, 0.18);
 }
 
-// Individual person card
+
+// ==========================================
+// PERSON CARDS
+// ==========================================
+
 .people-person {
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 1.75rem 1.25rem;
   margin-bottom: 2rem;
 
   box-shadow:
     0 2px 8px rgba(0, 0, 0, 0.04),
-    0 8px 24px rgba(0, 0, 0, 0.06);
+    0 8px 24px rgba(0, 0, 0, 0.07);
 
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-// Card hover effect
+// Lift card on hover
 .people-person:hover {
   transform: translateY(-5px);
 
   box-shadow:
     0 4px 12px rgba(0, 0, 0, 0.06),
-    0 12px 30px rgba(0, 0, 0, 0.10);
+    0 14px 32px rgba(0, 0, 0, 0.11);
 }
 
-// Larger profile photographs
+
+// ==========================================
+// PROFILE PHOTOS
+// ==========================================
+
 .people-person .avatar {
-  width: 170px;
-  height: 170px;
+  width: 165px;
+  height: 165px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
+
   transition: transform 0.2s ease;
 }
 
-// Slight image enlargement on hover
 .people-person:hover .avatar {
   transform: scale(1.03);
 }
 
-// Person's name
+
+// ==========================================
+// NAMES + ROLES
+// ==========================================
+
 .people-person h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-top: 0.8rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
-// Role/title
 .people-person .portrait-title {
   margin-top: 0;
 }
 
 .people-person .portrait-title h3 + p {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0.7;
   margin-bottom: 0.8rem;
-  opacity: 0.75;
 }
 
-// Research interests
+
+// ==========================================
+// RESEARCH INTERESTS
+// ==========================================
+
+// Container
 .people-person .interests {
-  margin-top: 0.9rem;
-  margin-bottom: 0.8rem;
-  font-size: 0.9rem;
-  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
 }
 
-// Social icons
+// Turn individual interests into pills
+.people-person .interests li {
+  display: inline-block;
+
+  background: #eef4f8;
+  border-radius: 999px;
+
+  padding: 0.35rem 0.75rem;
+  margin: 0.2rem 0.15rem;
+
+  font-size: 0.82rem;
+  line-height: 1.3;
+
+  color: #365b78;
+}
+
+
+// ==========================================
+// SOCIAL ICONS
+// ==========================================
+
 .people-person .network-icon {
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .people-person .network-icon li {
-  margin: 0 0.25rem;
+  margin: 0 0.3rem;
 }
 
-// Mobile layout
+.people-person .network-icon a {
+  transition: transform 0.2s ease;
+}
+
+.people-person .network-icon a:hover {
+  transform: translateY(-2px);
+}
+
+
+// ==========================================
+// MOBILE
+// ==========================================
+
 @media (max-width: 768px) {
+
   .people-widget h2 {
     font-size: 1.6rem;
     margin-top: 3rem;
