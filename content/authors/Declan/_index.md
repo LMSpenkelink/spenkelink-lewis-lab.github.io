@@ -27,7 +27,7 @@ bio: I study how the eukaryotic helicase bypasses DNA lesions
 interests:
   - DNA lesions
   - DNA replication
-  - Cryo-EM
+  - Cryo-electron microscopy
 
 education:
   courses:
