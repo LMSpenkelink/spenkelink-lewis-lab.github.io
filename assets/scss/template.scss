@@ -143,22 +143,23 @@
 // ==========================================
 
 .people-widget .people-person .network-icon {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
 }
 
 .people-widget .people-person .network-icon li {
-  margin: 0 0.3rem;
+  margin: 0 0.4rem;
 }
 
 .people-widget .people-person .network-icon a {
+  font-size: 1.35rem;
   transition: transform 0.2s ease;
 }
 
 .people-widget .people-person .network-icon a:hover {
   transform: translateY(-2px);
 }
-
 
 // ==========================================
 // MOBILE
