@@ -26,8 +26,8 @@ bio: I work on the cryo-EM and single-molecule visualisation of human DNA replic
 
 interests:
   - DNA replication
-  - cryo-EM
-  - single-molecule
+  - Cryo-electron microscopy
+  - Single-molecule visualisation
 
 education:
   courses:
