@@ -205,10 +205,11 @@
 // PRINCIPAL INVESTIGATOR CARDS
 // ==========================================
 
-// Lisanne only - test PI targeting
-.people-widget .people-person:has(a[href="/author/lisanne-spenkelink/"]) {
-  width: 45%;
-  max-width: 45%;
-  flex: 0 0 45%;
-  border: 2px solid #365b78;
+.people-widget .people-person:has(
+  a[href="/author/jacob-lewis/"],
+  a[href="/author/lisanne-spenkelink/"]
+) {
+  width: calc(50% - 2rem);
+  max-width: calc(50% - 2rem);
+  flex: 0 0 calc(50% - 2rem);
 }
