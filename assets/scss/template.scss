@@ -711,3 +711,44 @@
     grid-template-columns: 1fr;
   }
 }
+
+// ==========================================
+// PAPERS "SEE ALL" BUTTON
+// ==========================================
+
+.home-section .row:has(.pub-list-item.view-citation) .see-all {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.home-section .row:has(.pub-list-item.view-citation) .see-all a {
+  display: inline-block;
+  background: #eef4f8;
+  color: #365b78 !important;
+  border-radius: 999px;
+  padding: 1.1rem 2.2rem;
+  font-size: 0;
+  font-weight: 600;
+  text-decoration: none !important;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home-section .row:has(.pub-list-item.view-citation) .see-all a::after {
+  content: "View all papers →";
+  font-size: 1.2rem;
+}
+
+.home-section .row:has(.pub-list-item.view-citation) .see-all a:hover {
+  background: #e2edf4;
+  color: #294b66 !important;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.08);
+}
