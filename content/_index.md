@@ -77,10 +77,7 @@ sections:
     content:
       title: Latest News
       subtitle:
-      text: |
-        <div class="news-view-all">
-          <a href="/post/" class="news-view-all-button">View all news →</a>
-        </div>
+      text: 
       count: 4
       filters:
         author: ''
