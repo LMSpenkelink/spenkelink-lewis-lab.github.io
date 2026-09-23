@@ -96,19 +96,6 @@ sections:
     content:
       title:
       subtitle: ''
-      text: |
-        <div class="news-view-all">
-          <a href="/post/" class="news-view-all-button">View all news →</a>
-        </div>
-    design:
-      columns: '1'
-      spacing:
-        padding: ['0', '0', '2rem', '0']
-
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
       text:
     design:
       columns: '1'
