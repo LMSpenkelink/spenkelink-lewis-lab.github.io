@@ -662,17 +662,27 @@
 
 // Full-width centred heading
 .home-section .row:has(.pub-list-item.view-citation) > .section-heading {
-  flex: 0 0 100%;
-  max-width: 100%;
-  text-align: center;
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column;
   align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   margin-bottom: 2rem !important;
 }
 
-.home-section .row:has(.pub-list-item.view-citation) > .section-heading h1,
-.home-section .row:has(.pub-list-item.view-citation) > .section-heading h2 {
-  width: 100%;
-  text-align: center;
+.home-section .row:has(.pub-list-item.view-citation) > .section-heading > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 // The container holding the three papers
