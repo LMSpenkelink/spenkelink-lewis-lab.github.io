@@ -655,3 +655,62 @@
 #container-publications .publication-card-links p {
   margin: 0;
 }
+
+// ==========================================
+// HOMEPAGE LATEST PAPERS
+// ==========================================
+
+// Turn the three papers into a 3-column grid
+.home-section .col-12.col-lg-8:has(.pub-list-item.view-citation) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+// Make the papers use the full homepage width
+.home-section .row:has(.pub-list-item.view-citation) > .section-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  align-items: center !important;
+  margin-bottom: 2rem !important;
+}
+
+.home-section .row:has(.pub-list-item.view-citation) > .col-12.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+// Individual paper cards
+.home-section .pub-list-item.view-citation {
+  height: 100%;
+  margin: 0 !important;
+  padding: 1.5rem;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home-section .pub-list-item.view-citation:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.06),
+    0 14px 32px rgba(0, 0, 0, 0.11);
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .home-section .col-12.col-lg-8:has(.pub-list-item.view-citation) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
