@@ -12,7 +12,7 @@ date: "2021-08-26T00:00:00Z"
 doi: "10.3389/fmolb.2021.741718"
 
 publication_types:
-- "article"
+- "2"
 
 publication: "*Frontiers in Molecular Biosciences*"
 publication_short: "*Front. Mol. Biosci.*"
