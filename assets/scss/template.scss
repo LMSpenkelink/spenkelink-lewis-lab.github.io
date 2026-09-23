@@ -496,3 +496,41 @@
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+// ==========================================
+// VIEW ALL NEWS BUTTON
+// ==========================================
+
+.news-view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-view-all-button {
+  display: inline-block;
+
+  background: #eef4f8;
+  color: #365b78 !important;
+
+  border-radius: 999px;
+  padding: 0.7rem 1.3rem;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.news-view-all-button:hover {
+  background: #e2edf4;
+  color: #294b66 !important;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.08);
+}
