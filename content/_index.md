@@ -89,9 +89,8 @@ sections:
       order: desc
       page_type: post
     design:
-      view: showcase
-      flip_alt_rows: true
-    #  columns: '2'
+      view: card
+      columns: '2'
 
   - block: markdown
     content:
