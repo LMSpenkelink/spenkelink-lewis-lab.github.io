@@ -660,35 +660,6 @@
 // HOMEPAGE LATEST PAPERS
 // ==========================================
 
-// Publications container
-.home-section .col-12.col-lg-8:has(.pub-list-item.view-citation) {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-
-  position: relative !important;
-  height: auto !important;
-}
-
-// Each publication is wrapped by Hugo in an isotope item
-.home-section .col-12.col-lg-8:has(.pub-list-item.view-citation)
-.isotope-item {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
-
-  width: auto !important;
-  max-width: none !important;
-  padding: 0 !important;
-}
-
-// Hide the invisible isotope sizing element
-.home-section .col-12.col-lg-8:has(.pub-list-item.view-citation)
-.grid-sizer {
-  display: none;
-}
-
 // Full-width centred heading
 .home-section .row:has(.pub-list-item.view-citation) > .section-heading {
   flex: 0 0 100%;
@@ -698,10 +669,14 @@
   margin-bottom: 2rem !important;
 }
 
-// Let the publication area use the full width
-.home-section .row:has(.pub-list-item.view-citation) > .col-12.col-lg-8 {
+// The container holding the three papers
+.home-section .row:has(.pub-list-item.view-citation) > .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 // Individual paper cards
@@ -732,8 +707,7 @@
 
 // Mobile
 @media (max-width: 768px) {
-  .home-section .col-12.col-lg-8:has(.pub-list-item.view-citation) {
+  .home-section .row:has(.pub-list-item.view-citation) > .col-12 {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 }
