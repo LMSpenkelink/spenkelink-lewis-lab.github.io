@@ -1,6 +1,6 @@
 ---
 title: Jordan Nicholls receives best talk award at ECPM 2026
-date: 2025-01-30
+date: 2026-07-24
 ---
 
 Our entire lab travelled to Coffs Harbour for the 2026 East Coast Protein Meeting, where Jordan Nicholls was selected for a best talk award following his presentation.
