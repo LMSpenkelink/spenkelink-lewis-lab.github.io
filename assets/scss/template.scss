@@ -542,3 +542,31 @@
   box-shadow:
     0 3px 8px rgba(0, 0, 0, 0.08);
 }
+
+// ==========================================
+// PUBLICATIONS PAGE CARDS
+// ==========================================
+
+.pub-list-item.view-citation {
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pub-list-item.view-citation:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.06),
+    0 14px 32px rgba(0, 0, 0, 0.11);
+}
