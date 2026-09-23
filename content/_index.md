@@ -62,10 +62,23 @@ sections:
 
   - block: collection
     content:
+      title: Latest Papers
+      text: ""
+      count: 3
+      filters:
+        folders:
+          - publication
+        publication_type: 'article'
+    design:
+      view: citation
+      columns: '1'
+
+  - block: collection
+    content:
       title: Latest News
       subtitle:
       text:
-      count: 5
+      count: 4
       filters:
         author: ''
         category: ''
@@ -79,19 +92,6 @@ sections:
       view: showcase
       flip_alt_rows: true
     #  columns: '2'
-
-  - block: collection
-    content:
-      title: Latest Papers
-      text: ""
-      count: 5
-      filters:
-        folders:
-          - publication
-        publication_type: 'article'
-    design:
-      view: citation
-      columns: '1'
 
   - block: markdown
     content:
