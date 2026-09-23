@@ -481,3 +481,18 @@
     height: 200px;
   }
 }
+
+// Put Latest News heading above the cards
+.home-section .row:has(.card-simple.view-card) > .section-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  align-items: center !important;
+  margin-bottom: 2rem !important;
+}
+
+// Let the news grid use the full available width
+.home-section .row:has(.card-simple.view-card) > .col-12.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
