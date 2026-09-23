@@ -25,7 +25,7 @@ organizations:
 bio: I am developing single-molecule tools for directed evolution.
 
 interests:
-  - Cryo-EM
+  - Cryo-electron microscopy
   - Grid development 
   - Nanobodies
 
