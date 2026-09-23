@@ -26,8 +26,8 @@ bio: I am developing single-molecule tools for directed evolution.
 
 interests:
   - Biomarkers
-  - Single-molecule diagnostics
   - Nanobodies
+  - Single-molecule diagnostics
 
 education:
   courses:
