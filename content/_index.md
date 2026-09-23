@@ -80,14 +80,10 @@ sections:
       text:
       count: 4
       filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
+        folders:
+          - post
       offset: 0
       order: desc
-      page_type: post
     design:
       view: card
       columns: '2'
