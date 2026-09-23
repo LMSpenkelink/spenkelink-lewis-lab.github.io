@@ -669,6 +669,12 @@
   margin-bottom: 2rem !important;
 }
 
+.home-section .row:has(.pub-list-item.view-citation) > .section-heading h1,
+.home-section .row:has(.pub-list-item.view-citation) > .section-heading h2 {
+  width: 100%;
+  text-align: center;
+}
+
 // The container holding the three papers
 .home-section .row:has(.pub-list-item.view-citation) > .col-12 {
   flex: 0 0 100%;
