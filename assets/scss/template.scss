@@ -572,3 +572,86 @@
     0 4px 12px rgba(0, 0, 0, 0.06),
     0 14px 32px rgba(0, 0, 0, 0.11) !important;
 }
+
+// ==========================================
+// PUBLICATIONS PAGE TYPOGRAPHY
+// ==========================================
+
+// Give the icon and content a clean relationship
+#container-publications .publication-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
+
+#container-publications .publication-card .pub-icon {
+  flex: 0 0 auto;
+  margin-top: 0.35rem;
+  color: #6b7c8c;
+}
+
+#container-publications .publication-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+// Paper title
+#container-publications .publication-card-title {
+  display: block;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: #1264c4;
+  text-decoration: none;
+
+  margin-bottom: 0.55rem;
+
+  transition: color 0.2s ease;
+}
+
+#container-publications .publication-card-title:hover {
+  color: #0b4f9c;
+  text-decoration: none;
+}
+
+// Authors
+#container-publications .publication-card-authors {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #3f4a59;
+
+  margin-bottom: 0.55rem;
+}
+
+// Journal + year
+#container-publications .publication-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #566273;
+
+  margin-bottom: 0.8rem;
+}
+
+#container-publications .publication-card-journal em {
+  color: #566273;
+}
+
+#container-publications .publication-card-separator {
+  color: #9aa5af;
+}
+
+// Publication buttons
+#container-publications .publication-card-links {
+  margin-top: 0.1rem;
+}
+
+#container-publications .publication-card-links p {
+  margin: 0;
+}
