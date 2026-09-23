@@ -498,16 +498,18 @@
 }
 
 // ==========================================
-// VIEW ALL NEWS BUTTON
+// NEWS "SEE ALL" BUTTON
 // ==========================================
 
-.news-view-all {
+.home-section .row:has(.card-simple.view-card) .see-all {
+  grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  margin-top: 0.5rem;
 }
 
-.news-view-all-button {
+.home-section .row:has(.card-simple.view-card) .see-all a {
   display: inline-block;
 
   background: #eef4f8;
@@ -516,7 +518,7 @@
   border-radius: 999px;
   padding: 0.7rem 1.3rem;
 
-  font-size: 0.9rem;
+  font-size: 0; // hides Hugo's "SEE ALL POSTS"
   font-weight: 600;
   text-decoration: none !important;
 
@@ -526,7 +528,13 @@
     box-shadow 0.2s ease;
 }
 
-.news-view-all-button:hover {
+// Replace Hugo's wording
+.home-section .row:has(.card-simple.view-card) .see-all a::after {
+  content: "View all news →";
+  font-size: 0.9rem;
+}
+
+.home-section .row:has(.card-simple.view-card) .see-all a:hover {
   background: #e2edf4;
   color: #294b66 !important;
   transform: translateY(-2px);
