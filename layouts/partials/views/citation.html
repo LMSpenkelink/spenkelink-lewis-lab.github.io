@@ -1,0 +1,41 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="pub-list-item view-citation publication-card">
+
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  <div class="publication-card-content">
+
+    <a class="publication-card-title" href="{{ $item.RelPermalink }}">
+      {{ $item.Title }}
+    </a>
+
+    <div class="article-metadata li-cite-author publication-card-authors">
+      {{ partial "page_metadata_authors" $item }}
+    </div>
+
+    <div class="publication-card-details">
+      {{ if $item.Params.publication_short }}
+        <span class="publication-card-journal">
+          {{ $item.Params.publication_short | markdownify }}
+        </span>
+      {{ else if $item.Params.publication }}
+        <span class="publication-card-journal">
+          {{ $item.Params.publication | markdownify }}
+        </span>
+      {{ end }}
+
+      <span class="publication-card-separator">·</span>
+      <span class="publication-card-year">{{ $item.Date.Format "2006" }}</span>
+    </div>
+
+    {{ if $has_attachments }}
+      <div class="publication-card-links">
+        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      </div>
+    {{ end }}
+
+  </div>
+
+</div>
