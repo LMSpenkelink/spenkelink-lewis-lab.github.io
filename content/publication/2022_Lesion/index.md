@@ -11,7 +11,7 @@ date: "2022-09-21T00:00:00Z"
 doi: "10.3389/fmolb.2022.968424"
 
 publication_types:
-- "article"
+- "article-journal"
 
 publication: "*Frontiers in Molecular Biosciences*"
 publication_short: ""
