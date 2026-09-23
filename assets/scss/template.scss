@@ -570,3 +570,43 @@
     0 4px 12px rgba(0, 0, 0, 0.06),
     0 14px 32px rgba(0, 0, 0, 0.11);
 }
+
+// ==========================================
+// PUBLICATIONS PAGE TYPOGRAPHY
+// ==========================================
+
+// Authors
+#container-publications .li-cite-author {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #3f4a59;
+}
+
+// Paper title
+#container-publications .pub-list-item.view-citation > a {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.45;
+
+  color: #1264c4;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+#container-publications .pub-list-item.view-citation > a:hover {
+  color: #0b4f9c;
+  text-decoration: none;
+}
+
+// Journal
+#container-publications .pub-list-item.view-citation > em {
+  font-size: 0.95rem;
+  color: #566273;
+}
+
+// Links / buttons area
+#container-publications .pub-list-item.view-citation > p {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
