@@ -547,7 +547,7 @@
 // PUBLICATIONS PAGE CARDS
 // ==========================================
 
-.pub-list-item.view-citation {
+#container-publications .pub-list-item.view-citation {
   background: #ffffff;
   border-radius: 16px;
 
@@ -563,7 +563,7 @@
     box-shadow 0.2s ease;
 }
 
-.pub-list-item.view-citation:hover {
+#container-publications .pub-list-item.view-citation:hover {
   transform: translateY(-4px);
 
   box-shadow:
