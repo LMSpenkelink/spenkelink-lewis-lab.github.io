@@ -516,7 +516,7 @@
   color: #365b78 !important;
 
   border-radius: 999px;
-  padding: 0.9rem 1.7rem;
+  padding: 1.1rem 2.2rem;
 
   font-size: 0; // hides Hugo's "SEE ALL POSTS"
   font-weight: 600;
@@ -531,7 +531,7 @@
 // Replace Hugo's wording
 .home-section .row:has(.card-simple.view-card) .see-all a::after {
   content: "View all news →";
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 .home-section .row:has(.card-simple.view-card) .see-all a:hover {
