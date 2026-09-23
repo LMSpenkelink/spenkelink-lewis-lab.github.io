@@ -3,15 +3,13 @@ title: "Understanding G-Quadruplex Biology and Stability Using Single-Molecule T
 authors:
 - Nicholas Kusi-Appauh
 - Stephen F. Ralph
-- admin
+- Antoine M. van Oijen
+- Lisanne M. Spenkelink
 #author_notes:
 #- "Equal contribution"
 #- "Equal contribution"
-date: "2023-11-16T00:00:00Z"
-doi: "10.1021/acs.chemrev.3c00436"
-
-# Schedule page publish date (NOT publication's date).
-publishDate: "2024-12-11T00:00:00Z"
+date: "2023-06-13T00:00:00Z"
+doi: "10.1021/acs.jpcb.3c01708"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -19,10 +17,10 @@ publishDate: "2024-12-11T00:00:00Z"
 publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Chemical Reviews*"
+publication: "*American Chemical Society*"
 publication_short: ""
 
-abstract: The paradigm of cellular systems as deterministic machines has long guided our understanding of biology. Advancements in technology and methodology, however, have revealed a world of stochasticity, challenging the notion of determinism. Here, we explore the stochastic behavior of multi-protein complexes, using the DNA replication system (replisome) as a prime example. The faithful and timely copying of DNA depends on the simultaneous action of a large set of enzymes and scaffolding factors. This fundamental cellular process is underpinned by dynamic protein–nucleic acid assemblies that must transition between distinct conformations and compositional states. Traditionally viewed as a well-orchestrated molecular machine, recent experimental evidence has unveiled significant variability and heterogeneity in the replication process. In this review, we discuss recent advances in single-molecule approaches and single-particle cryo-EM, which have provided insights into the dynamic processes of DNA replication. We comment on the new challenges faced by structural biologists and biophysicists as they attempt to describe the dynamic cascade of events leading to replisome assembly, activation, and progression. The fundamental principles uncovered and yet to be discovered through the study of DNA replication will inform on similar operating principles for other multi-protein complexes.
+abstract: The link between the chemical stability of G-quadruplex (qDNA) structures and their roles in eukaryotic genomic maintenance processes has been an area of interest now for several decades. This Review seeks to demonstrate how single-molecule force-based techniques can provide insight into the mechanical stabilities of a variety of qDNA structures as well as their ability to interconvert between different conformations under conditions of stress. Atomic force microscopy (AFM) and magnetic and optical tweezers have been the primary tools used in these investigations and have been used to examine both free and ligand-stabilized G-quadruplex structures. These studies have shown that the degree of stabilization of G-quadruplex structures has a significant effect on the ability of nuclear machinery to bypass these roadblocks on DNA strands. This Review will illustrate how various cellular components including replication protein A (RPA), Bloom syndrome protein (BLM), and Pif1 helicases are capable of unfolding qDNA. Techniques such as single-molecule fluorescence resonance energy transfer (smFRET), often in conjunction with the aforementioned force-based techniques, have proven extremely effective at elucidating the factors underpinning the mechanisms by which these proteins unwind qDNA structures. We will provide insight into how single-molecule tools have facilitated the direct visualization of qDNA roadblocks and also showcase results obtained from experiments designed to examine the ability of G-quadruplexes to limit the access of specific cellular proteins normally associated with telomeres.
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -34,7 +32,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pubs.acs.org/doi/epdf/10.1021/acs.chemrev.3c00436?ref=article_openPDF'
+url_pdf: 'https://pubs.acs.org/jpcbfk/article-pdf/127/25/5521/10011418/jp3c01708.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
