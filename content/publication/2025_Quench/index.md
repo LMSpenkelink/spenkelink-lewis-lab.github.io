@@ -1,5 +1,5 @@
 ---
-title: "Development of a generalisable tryptophan-optimised quenchbody biosensor based on a synthetic nanobody library"
+title: "Optimised nanobody-based quenchbodies for enhanced protein detection"
 authors:
 - Jordan Cater
 - Nehad El Salamouni
@@ -26,7 +26,7 @@ doi: "10.1038/s42003-025-08359-3"
 publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Communications Biology*'
+publication: "*Communications Biology*"
 publication_short: ""
 
 abstract: Quenchbodies, antibodies labelled with fluorophores that increase in intensity upon antigen binding, offer great promise for biosensor development. Nanobody-based quenchbodies are particularly attractive due to their small size, ease of expression, high stability, rapid evolvability, and amenability to protein engineering. However, existing designs for protein detection show limited dynamic range, with fluorescence increases of only 1.1–1.4 fold. Here we identify the tryptophan residues in the nanobody complementarity-determining regions (CDRs) that are critical to quenchbody performance. Using a combination of rational design and molecular dynamics simulations, we developed an optimised nanobody scaffold with tryptophans introduced at key positions. We used this scaffold in an in vitro directed-evolution screen against human inflammatory cytokine interleukin-6 (IL-6). This yielded quenchbodies with 1.5–2.4-fold fluorescence increases, enabling IL-6 detection down to 1–2 nM. Our scaffold provides a valuable platform for developing biosensors for diverse protein targets, with applications in research, diagnostics, and environmental monitoring.
@@ -40,7 +40,7 @@ featured: false
 
 links:
 - name: PDF
-url_pdf: file:///C:/Users/nka205/Downloads/s42003-025-08359-3.pdf
+url_pdf: "https://www.nature.com/articles/s42003-025-08359-3.pdf"
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -71,9 +71,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-
-# {{% callout note %}}
-# Create your slides in Markdown - click the *Slides* button to check out the example.
-# {{% /callout %}}
-
-# Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, # and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
