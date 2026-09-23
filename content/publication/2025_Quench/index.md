@@ -39,7 +39,6 @@ tags:
 featured: false
 
 links:
-- name: PDF
 url_pdf: "https://www.nature.com/articles/s42003-025-08359-3.pdf"
 url_code: ''
 url_dataset: ''
