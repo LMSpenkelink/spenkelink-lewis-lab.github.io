@@ -718,17 +718,14 @@
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 0.8rem;
 }
 
-.home-section .pub-list-item.view-citation:hover {
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.06),
-    0 14px 32px rgba(0, 0, 0, 0.11);
+// Space between paper title and authors
+.home-section .pub-list-item.view-citation .publication-card-authors {
+  margin-top: 0.7rem !important;
 }
 
+// Card hover
 .home-section .pub-list-item.view-citation:hover {
   transform: translateY(-5px);
 
