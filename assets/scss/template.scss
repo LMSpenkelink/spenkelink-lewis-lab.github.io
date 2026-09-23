@@ -544,69 +544,79 @@
 }
 
 // ==========================================
-// PUBLICATIONS PAGE CARDS
-// ==========================================
-
-#container-publications .pub-list-item.view-citation {
-  background: #ffffff;
-  border-radius: 16px;
-
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 1.5rem;
-
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.04),
-    0 8px 24px rgba(0, 0, 0, 0.07);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-#container-publications .pub-list-item.view-citation:hover {
-  transform: translateY(-4px);
-
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.06),
-    0 14px 32px rgba(0, 0, 0, 0.11);
-}
-
-// ==========================================
 // PUBLICATIONS PAGE TYPOGRAPHY
 // ==========================================
 
-// Authors
-#container-publications .li-cite-author {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #3f4a59;
+#container-publications .pub-list-item.view-citation {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#container-publications .pub-icon {
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+  color: #687586;
+}
+
+#container-publications .publication-card-content {
+  flex: 1;
+  min-width: 0;
 }
 
 // Paper title
-#container-publications .pub-list-item.view-citation > a {
-  font-size: 1.15rem;
+#container-publications .publication-card-title {
+  display: block;
+
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
 
   color: #1264c4;
   text-decoration: none;
 
+  margin-bottom: 0.55rem;
+
   transition: color 0.2s ease;
 }
 
-#container-publications .pub-list-item.view-citation > a:hover {
+#container-publications .publication-card-title:hover {
   color: #0b4f9c;
   text-decoration: none;
 }
 
-// Journal
-#container-publications .pub-list-item.view-citation > em {
+// Authors
+#container-publications .publication-card-authors {
   font-size: 0.95rem;
+  line-height: 1.55;
+  color: #3f4a59;
+
+  margin-bottom: 0.3rem;
+}
+
+// Journal + year
+#container-publications .publication-card-details {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #687586;
+
+  margin-bottom: 0.8rem;
+}
+
+#container-publications .publication-card-journal em {
   color: #566273;
 }
 
-// Links / buttons area
-#container-publications .pub-list-item.view-citation > p {
-  margin-top: 0.75rem;
-  margin-bottom: 0;
+#container-publications .publication-card-separator {
+  margin: 0 0.25rem;
+}
+
+#container-publications .publication-card-year {
+  font-style: normal;
+  color: #687586;
+}
+
+// PDF / Cite / DOI
+#container-publications .publication-card-links {
+  margin-top: 0.8rem;
 }
