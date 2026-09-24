@@ -106,14 +106,16 @@
 // ==========================================
 
 .people-widget .people-person .avatar {
-  flex: 0 0 125px;
+  flex: 0 0 115px;
 
-  width: 125px;
-  max-width: 125px;
-  height: 125px;
+  width: 115px;
+  max-width: 115px;
+  height: 145px;
 
   object-fit: cover;
-  border-radius: 50%;
+  object-position: center center;
+
+  border-radius: 12px;
 
   margin: 0;
 
@@ -121,7 +123,7 @@
 }
 
 .people-widget .people-person:hover .avatar {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 // ==========================================
