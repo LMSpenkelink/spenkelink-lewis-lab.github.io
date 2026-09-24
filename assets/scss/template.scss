@@ -893,12 +893,12 @@
 .homepage-hero h1 {
   color: #ffffff !important;
 
-  font-size: 2.65rem !important;
+  font-size: 2.6rem !important;
   font-weight: 700 !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.035em;
+  line-height: 1.08 !important;
+  letter-spacing: -0.03em;
 
-  margin: 0 0 0.45rem 0 !important;
+  margin: 0 0 0.55rem 0 !important;
 
   white-space: nowrap;
 }
@@ -907,11 +907,11 @@
 .homepage-hero .hero-tagline {
   color: rgba(255, 255, 255, 0.92) !important;
 
-  font-size: 1.25rem !important;
+  font-size: 1.15rem !important;
   font-weight: 400 !important;
-  line-height: 1.35 !important;
+  line-height: 1.4 !important;
 
-  margin: 0 0 1.45rem 0 !important;
+  margin: 0 0 1.6rem 0 !important;
 
   white-space: nowrap;
 }
@@ -923,9 +923,9 @@
 
   color: rgba(255, 255, 255, 0.78) !important;
 
-  font-size: 0.95rem !important;
+  font-size: 0.9rem !important;
   font-weight: 400 !important;
-  line-height: 1.55 !important;
+  line-height: 1.6 !important;
 
   margin: 0 !important;
 }
@@ -934,18 +934,18 @@
 @media (max-width: 1200px) {
 
   .homepage-hero h1 {
-    font-size: 2.35rem !important;
+    font-size: 2.4rem !important;
   }
 
   .homepage-hero .hero-tagline {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
   }
 
   .homepage-hero .hero-description {
     width: 470px !important;
     max-width: 470px !important;
 
-    font-size: 0.9rem !important;
+    font-size: 0.88rem !important;
   }
 }
 
@@ -970,7 +970,7 @@
   }
 
   .homepage-hero .hero-tagline {
-    font-size: 1.05rem !important;
+    font-size: 1rem !important;
     white-space: normal;
   }
 
@@ -978,7 +978,7 @@
     width: 100% !important;
     max-width: 390px !important;
 
-    font-size: 0.9rem !important;
+    font-size: 0.88rem !important;
   }
 
   .homepage-hero .hero-media::after {
