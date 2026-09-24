@@ -51,10 +51,9 @@
   border-bottom: 1px solid rgba(25, 70, 110, 0.18);
 }
 
-/* Add separation before every group heading except the first */
-.people-widget .people-person + h2,
-.people-widget .row + h2 {
-  margin-top: 3rem !important;
+/* Space between one people group and the next heading */
+.people-widget .people-person + .col-md-12 {
+  margin-top: 2rem !important;
 }
 
 /* First heading stays close to the banner */
