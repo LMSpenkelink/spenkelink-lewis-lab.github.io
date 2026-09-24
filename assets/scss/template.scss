@@ -1563,28 +1563,62 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
 
 @media (max-width: 991.98px) {
 
-  /* Desktop brand is hidden by Hugo on mobile */
+  /* Keep mobile navbar laid out cleanly */
+  body:not(:has(.homepage-hero)) #navbar-main > .container-xl {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* Brand stays on the left */
+  body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper {
+    display: flex !important;
+    align-items: center !important;
+
+    margin-right: auto !important;
+  }
+
+  /* Hide logo image */
   body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand img {
     display: none !important;
   }
 
+  /* Text brand */
   body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand {
     display: inline-flex !important;
+    align-items: center !important;
 
     color: #ffffff !important;
 
     font-size: 0.9rem !important;
     font-weight: 600 !important;
 
+    margin: 0 !important;
+    padding: 0 !important;
+
     text-decoration: none !important;
+    white-space: nowrap !important;
   }
 
   body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand::after {
     content: "Spenkelink & Lewis labs";
   }
 
+  /* Hamburger stays on the far right */
   body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler {
+    position: static !important;
+
+    display: block !important;
+
+    order: 10 !important;
+
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    padding: 0.25rem !important;
+
     color: #ffffff !important;
+
     border: 0 !important;
   }
 
@@ -1593,6 +1627,12 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
   body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler i {
     color: #ffffff !important;
     fill: #ffffff !important;
+  }
+
+  /* Open mobile navigation sits beneath the top row */
+  body:not(:has(.homepage-hero)) #navbar-content {
+    flex-basis: 100% !important;
+    width: 100% !important;
   }
 
   body:not(:has(.homepage-hero)) #navbar-content.show {
