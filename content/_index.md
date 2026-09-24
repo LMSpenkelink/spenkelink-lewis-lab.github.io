@@ -21,7 +21,11 @@ sections:
     content:
       title: Our Research
       subtitle: ''
-      text: |
+            text: |
+        <div class="research-header">
+          <a class="research-tour-link" href="/tour/">View our research →</a>
+        </div>
+
         <div class="research-grid">
 
           <div class="research-card">
