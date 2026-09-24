@@ -985,3 +985,68 @@
     background: rgba(0, 0, 0, 0.70);
   }
 }
+
+// ==========================================
+// HOMEPAGE TRANSPARENT NAVBAR
+// ==========================================
+
+/* Place navbar over the hero */
+body:has(.homepage-hero) .page-header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+
+  z-index: 1000 !important;
+}
+
+/* Transparent navbar */
+body:has(.homepage-hero) .navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Hide the S&L logo on the homepage */
+body:has(.homepage-hero) .navbar-brand img {
+  display: none !important;
+}
+
+/* Site name */
+body:has(.homepage-hero) .navbar-brand {
+  color: #ffffff !important;
+
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+
+  margin-left: 0 !important;
+}
+
+/* Keep site name white on hover */
+body:has(.homepage-hero) .navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+/* Navigation links */
+body:has(.homepage-hero) .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+
+  font-weight: 400 !important;
+}
+
+/* Navigation links on hover */
+body:has(.homepage-hero) .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Search icon */
+body:has(.homepage-hero) .navbar svg,
+body:has(.homepage-hero) .navbar i {
+  color: #ffffff !important;
+}
+
+/* Move hero content down so it sits below the navbar */
+body:has(.homepage-hero) .homepage-hero > .container {
+  padding-top: 65px !important;
+}
