@@ -990,7 +990,7 @@
 // HOMEPAGE TRANSPARENT NAVBAR
 // ==========================================
 
-/* Place the navbar over the hero */
+/* Place navbar over hero */
 body:has(.homepage-hero) .page-header {
   position: absolute !important;
   top: 0 !important;
@@ -1008,32 +1008,29 @@ body:has(.homepage-hero) .navbar {
   border: none !important;
 }
 
-/* Hide ONLY the S&L logo image */
-body:has(.homepage-hero) .navbar-brand img {
+/* Hide Hugo's existing logo / brand */
+body:has(.homepage-hero) .navbar-brand {
   display: none !important;
 }
 
-/* Keep the brand itself visible */
-body:has(.homepage-hero) .navbar-brand {
-  display: flex !important;
-  align-items: center !important;
+/* Create our own simple text brand */
+body:has(.homepage-hero) .navbar .container::before {
+  content: "Spenkelink & Lewis labs";
 
-  color: #ffffff !important;
+  display: block;
 
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
+  color: #ffffff;
 
-  margin: 0 !important;
-  padding: 0 !important;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  margin-right: auto;
 }
 
-/* Make any text inside the brand white */
-body:has(.homepage-hero) .navbar-brand,
-body:has(.homepage-hero) .navbar-brand * {
-  color: #ffffff !important;
-}
-
-/* Desktop navigation links */
+/* Navigation links */
 body:has(.homepage-hero) .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.88) !important;
 }
@@ -1042,31 +1039,30 @@ body:has(.homepage-hero) .navbar-nav .nav-link:hover {
   color: #ffffff !important;
 }
 
-/* Search + navbar icons */
+/* Search icon */
 body:has(.homepage-hero) .navbar svg,
 body:has(.homepage-hero) .navbar i {
   color: #ffffff !important;
 }
 
-/* Mobile hamburger */
-body:has(.homepage-hero) .navbar-toggler {
-  display: block;
-  color: #ffffff !important;
-  border-color: transparent !important;
-}
-
-/* Hamburger lines/icon */
-body:has(.homepage-hero) .navbar-toggler-icon,
-body:has(.homepage-hero) .navbar-toggler svg,
-body:has(.homepage-hero) .navbar-toggler i {
-  color: #ffffff !important;
-  fill: #ffffff !important;
-}
-
-/* Leave room for navbar over hero */
+/* Hero content clears overlaid navbar */
 body:has(.homepage-hero) .homepage-hero > .container {
   padding-top: 65px !important;
 }
+
+
+/* ==========================================
+   DESKTOP
+   ========================================== */
+
+@media (min-width: 769px) {
+
+  /* No hamburger on desktop */
+  body:has(.homepage-hero) .navbar-toggler {
+    display: none !important;
+  }
+}
+
 
 /* ==========================================
    MOBILE
@@ -1074,37 +1070,24 @@ body:has(.homepage-hero) .homepage-hero > .container {
 
 @media (max-width: 768px) {
 
-  /* Keep homepage navbar visible */
-  body:has(.homepage-hero) .page-header,
-  body:has(.homepage-hero) .navbar {
-    display: block !important;
-    visibility: visible !important;
+  /* Slightly smaller brand */
+  body:has(.homepage-hero) .navbar .container::before {
+    font-size: 0.9rem;
   }
 
-  /* Brand */
-  body:has(.homepage-hero) .navbar-brand {
-    display: flex !important;
-
-    color: #ffffff !important;
-
-    font-size: 0.95rem !important;
-    font-weight: 600 !important;
-  }
-
-  /* Still hide only the logo */
-  body:has(.homepage-hero) .navbar-brand img {
+  /* Hide desktop navigation links until menu opens */
+  body:has(.homepage-hero) .navbar-collapse:not(.show) {
     display: none !important;
   }
 
-  /* Keep mobile menu button visible */
+  /* Show hamburger */
   body:has(.homepage-hero) .navbar-toggler {
     display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+
+    color: #ffffff !important;
+    border: 0 !important;
   }
 
-  /* White mobile navigation controls */
-  body:has(.homepage-hero) .navbar-toggler,
   body:has(.homepage-hero) .navbar-toggler-icon,
   body:has(.homepage-hero) .navbar-toggler svg,
   body:has(.homepage-hero) .navbar-toggler i {
@@ -1112,17 +1095,26 @@ body:has(.homepage-hero) .homepage-hero > .container {
     fill: #ffffff !important;
   }
 
-  /* Mobile menu once opened */
-  body:has(.homepage-hero) .navbar-collapse {
-    background: rgba(0, 0, 0, 0.92) !important;
+  /* Open mobile menu */
+  body:has(.homepage-hero) .navbar-collapse.show {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+
+    background: rgba(0, 0, 0, 0.94) !important;
   }
 
-  body:has(.homepage-hero) .navbar-collapse .nav-link {
+  body:has(.homepage-hero) .navbar-collapse.show .nav-link {
     color: #ffffff !important;
   }
 
-  /* Extra room below navbar */
+  /* More room underneath mobile navbar */
   body:has(.homepage-hero) .homepage-hero > .container {
-    padding-top: 75px !important;
+    padding-top: 70px !important;
   }
 }
