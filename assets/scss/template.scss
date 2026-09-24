@@ -23,19 +23,26 @@
 // ==========================================
 
 .people-widget {
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.5rem;
 }
 
 .people-widget h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  padding-bottom: 0.75rem;
+
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+
+  padding-bottom: 0.65rem;
+
   border-bottom: 1px solid rgba(25, 70, 110, 0.18);
 }
 
+/* First group begins closer to the banner */
+.people-widget h2:first-of-type {
+  margin-top: 0;
+}
 
 // ==========================================
 // PERSON CARDS
