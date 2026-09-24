@@ -1395,33 +1395,41 @@ body:not(:has(.homepage-hero)) #navbar-main {
 
 
 /* ==========================================
-// TEXT-ONLY BRAND
+// TEXT-ONLY CLICKABLE BRAND
 // ========================================== */
 
-/* Hide the normal logo / branding */
-body:not(:has(.homepage-hero)) #navbar-main > .container-xl > .d-none.d-lg-inline-flex {
+/* Keep Hugo's real homepage link, but hide the logo image */
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand img {
   display: none !important;
 }
 
-body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper {
-  display: none !important;
-}
+/* Turn the existing homepage link into our text brand */
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand {
+  display: inline-flex !important;
 
-/* Replace it with the same text treatment as the homepage */
-body:not(:has(.homepage-hero)) #navbar-main > .container-xl::before {
-  content: "Spenkelink & Lewis labs";
+  align-items: center;
 
-  display: block;
+  color: #ffffff !important;
 
-  color: #ffffff;
-
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
 
   white-space: nowrap;
 
-  margin-right: 2.5rem;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-decoration: none !important;
+}
+
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand::after {
+  content: "Spenkelink & Lewis labs";
+}
+
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 
@@ -1491,10 +1499,6 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
 
 @media (min-width: 992px) {
 
-  body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler {
-    display: none !important;
-  }
-
   body:not(:has(.homepage-hero)) #navbar-content {
     margin-left: auto !important;
   }
@@ -1507,14 +1511,27 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
 
 @media (max-width: 991.98px) {
 
-  body:not(:has(.homepage-hero)) #navbar-main > .container-xl::before {
-    font-size: 0.9rem;
-    margin-right: auto;
+  /* Desktop brand is hidden by Hugo on mobile */
+  body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand img {
+    display: none !important;
+  }
+
+  body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand {
+    display: inline-flex !important;
+
+    color: #ffffff !important;
+
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+  }
+
+  body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper .navbar-brand::after {
+    content: "Spenkelink & Lewis labs";
   }
 
   body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler {
-    display: block !important;
-
     color: #ffffff !important;
     border: 0 !important;
   }
@@ -1526,25 +1543,8 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
     fill: #ffffff !important;
   }
 
-  body:not(:has(.homepage-hero)) #navbar-content:not(.show) {
-    display: none !important;
-  }
-
   body:not(:has(.homepage-hero)) #navbar-content.show {
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    width: 100%;
-
-    padding: 1rem 1.25rem;
-
     background: #0f202d !important;
-  }
-
-  body:not(:has(.homepage-hero)) #navbar-content.show .nav-link {
-    color: #ffffff !important;
   }
 
   body:not(:has(.homepage-hero)) #navbar-main .nav-link.active::after {
