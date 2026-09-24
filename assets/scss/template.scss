@@ -788,9 +788,12 @@
 
 .homepage-hero {
   position: relative !important;
-  height: 430px !important;
-  min-height: 430px !important;
+  height: 500px !important;
+  min-height: 500px !important;
+
   padding: 0 !important;
+  margin: 0 !important;
+
   overflow: hidden !important;
 }
 
@@ -798,7 +801,7 @@
 .homepage-hero > .container {
   position: relative !important;
   height: 100% !important;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 .homepage-hero > .container > .row {
@@ -809,6 +812,7 @@
 /* Full-width photograph */
 .homepage-hero .hero-media {
   position: absolute !important;
+
   top: 0 !important;
   left: 50% !important;
 
@@ -827,32 +831,36 @@
 
 /* Photograph */
 .homepage-hero .hero-media img {
+  position: absolute !important;
+  inset: 0 !important;
+
   width: 100% !important;
   height: 100% !important;
 
   object-fit: cover !important;
-  object-position: center center !important;
+  object-position: center 58% !important;
 
   display: block !important;
 }
 
-/* Gradient DIRECTLY over photograph */
+/* Dark gradient directly over photograph */
 .homepage-hero .hero-media::after {
   content: "";
+
   position: absolute;
   inset: 0;
 
+  z-index: 1;
+  pointer-events: none;
+
   background: linear-gradient(
-    to right,
+    90deg,
     rgba(0, 0, 0, 0.92) 0%,
     rgba(0, 0, 0, 0.82) 22%,
     rgba(0, 0, 0, 0.55) 40%,
     rgba(0, 0, 0, 0.22) 58%,
-    rgba(0, 0, 0, 0.00) 76%
+    rgba(0, 0, 0, 0) 76%
   );
-
-  z-index: 1;
-  pointer-events: none;
 }
 
 /* Text column */
@@ -894,9 +902,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+
   .homepage-hero {
-    height: 430px !important;
-    min-height: 430px !important;
+    height: 500px !important;
+    min-height: 500px !important;
   }
 
   .homepage-hero .row > .col-12:first-child {
