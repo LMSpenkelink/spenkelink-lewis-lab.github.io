@@ -1492,34 +1492,34 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
   color: #ffffff !important;
 }
 
-
 /* ==========================================
 // DESKTOP
 // ========================================== */
 
 @media (min-width: 992px) {
 
-  /* Make navbar layout identical on every internal page */
+  /*
+   * Keep Hugo's normal centred navbar container.
+   * Do not change its width or max-width.
+   */
   body:not(:has(.homepage-hero)) #navbar-main > .container-xl {
-    display: flex !important;
     align-items: center !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    padding-left: 1.75rem !important;
-    padding-right: 1.75rem !important;
   }
 
-  /* Fixed-width brand area */
+  /*
+   * Brand takes only its natural width.
+   * Give it one consistent gap before the navigation.
+   */
   body:not(:has(.homepage-hero)) #navbar-main > .container-xl > .d-none.d-lg-inline-flex {
-    display: flex !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
 
-    flex: 0 0 245px !important;
-    width: 245px !important;
+    margin-right: 2.5rem !important;
   }
 
-  /* Navigation always begins at exactly the same point */
+  /*
+   * Navigation begins immediately after that fixed gap.
+   */
   body:not(:has(.homepage-hero)) #navbar-content {
     flex: 0 0 auto !important;
 
@@ -1527,12 +1527,14 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
     margin-right: 0 !important;
   }
 
-  /* Keep the search icon at the far right */
+  /*
+   * Search remains at the far right of Hugo's
+   * normal centred navbar container.
+   */
   body:not(:has(.homepage-hero)) #navbar-main .nav-icons {
     margin-left: auto !important;
   }
 }
-
 
 /* ==========================================
 // MOBILE
