@@ -246,20 +246,85 @@
 @media (max-width: 768px) {
 
   .people-widget h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
-  .people-widget .people-person {
-    padding: 1.5rem 1rem;
-    margin: 0.75rem 0;
+  /* All people cards become full width */
+  .people-widget .people-person,
+  .people-widget .people-person:has(
+    a[href="/author/jacob-lewis/"],
+    a[href="/author/lisanne-spenkelink/"]
+  ) {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+
+    margin: 0 0 1rem 0 !important;
+    padding: 1.25rem !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.9rem;
+
+    text-align: center;
   }
 
+  /* Rectangular portrait */
   .people-widget .people-person .avatar {
-    width: 145px;
-    height: 145px;
-    max-width: none;
+    flex: none;
+
+    width: 150px;
+    max-width: 150px;
+    height: 180px;
+
+    border-radius: 12px;
+
+    margin: 0;
+  }
+
+  /* Centre profile information */
+  .people-widget .people-person .portrait-title {
+    width: 100%;
+    min-width: 0;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .people-widget .people-person .portrait-title h2 {
+    width: auto !important;
+
+    text-align: center !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .people-widget .people-person .portrait-title h3 {
+    text-align: center;
+  }
+
+  /* Centre pills and allow them to wrap */
+  .people-widget .people-person .people-interests {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  /* Centre social icons */
+  .people-widget .people-person .network-icon {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .people-widget .people-person .network-icon li {
+    margin: 0 0.3rem;
   }
 }
 
