@@ -104,7 +104,7 @@ sections:
       columns: '1'
       background:
         image:
-          filename: lasers.jpg
+          filename: banner.jpg
           filters:
             brightness: 1
           parallax: false
@@ -112,8 +112,8 @@ sections:
           size: cover
           text_color_light: true
       spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+        padding: ['140px', '0', '140px', '0']
+      css_class: homepage-banner
 
   #- block: markdown
   #  content:
