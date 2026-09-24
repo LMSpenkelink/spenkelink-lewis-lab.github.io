@@ -369,28 +369,33 @@
   width: calc(50% - 2rem);
   max-width: calc(50% - 2rem);
   flex: 0 0 calc(50% - 2rem);
+
+  border-top: 4px solid #1769c2;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.05),
+    0 10px 28px rgba(0, 0, 0, 0.09);
 }
 
-// ==========================================
-// HOMEPAGE SECTION SPACING
-// ==========================================
+/* Larger PI portraits */
+.people-widget .people-person:has(
+  a[href="/author/jacob-lewis/"],
+  a[href="/author/lisanne-spenkelink/"]
+) .avatar {
+  flex-basis: 155px;
 
-body:has(.homepage-hero) .home-section:not(.homepage-hero) {
-  padding-top: 2.75rem !important;
-  padding-bottom: 2.75rem !important;
+  width: 155px;
+  max-width: 155px;
+  height: 190px;
 }
 
-/* First section after the hero */
-body:has(.homepage-hero) .homepage-hero + .home-section {
-  padding-top: 2.75rem !important;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  body:has(.homepage-hero) .home-section:not(.homepage-hero) {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
+/* Larger PI names */
+.people-widget .people-person:has(
+  a[href="/author/jacob-lewis/"],
+  a[href="/author/lisanne-spenkelink/"]
+) .portrait-title h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 // ==========================================
