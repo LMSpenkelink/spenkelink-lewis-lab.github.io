@@ -1737,3 +1737,123 @@ body:has(.homepage-hero) footer {
   display: none !important;
 }
 
+// ==========================================
+// INTERNAL PAGE BANNER
+// ==========================================
+
+.internal-page-banner {
+  position: relative !important;
+
+  height: 190px !important;
+  min-height: 190px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  overflow: hidden !important;
+}
+
+/* Shared banner photograph */
+.internal-page-banner .home-section-bg {
+  background-size: cover !important;
+  background-position: center 48% !important;
+}
+
+/* Dark gradient for title readability */
+.internal-page-banner::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.68) 20%,
+    rgba(0, 0, 0, 0.38) 40%,
+    rgba(0, 0, 0, 0.10) 62%,
+    rgba(0, 0, 0, 0) 78%
+  );
+}
+
+/* Banner content */
+.internal-page-banner > .container {
+  position: relative !important;
+
+  height: 100% !important;
+
+  z-index: 2 !important;
+}
+
+.internal-page-banner > .container > .row {
+  height: 100% !important;
+
+  align-items: center !important;
+
+  margin: 0 !important;
+}
+
+/* Allow title to use the full content width */
+.internal-page-banner .col-12 {
+  flex: 0 0 100% !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  padding: 0 !important;
+}
+
+/* Page title */
+.internal-page-banner-title {
+  color: #ffffff !important;
+
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em;
+
+  text-align: left !important;
+
+  margin: 0 !important;
+
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ==========================================
+// MOBILE
+// ========================================== */
+
+@media (max-width: 768px) {
+
+  .internal-page-banner {
+    height: 150px !important;
+    min-height: 150px !important;
+  }
+
+  .internal-page-banner .home-section-bg {
+    background-position: center center !important;
+  }
+
+  .internal-page-banner::after {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.80) 0%,
+      rgba(0, 0, 0, 0.58) 50%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+  }
+
+  .internal-page-banner-title {
+    font-size: 2rem !important;
+  }
+
+  .internal-page-banner .col-12 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+}
