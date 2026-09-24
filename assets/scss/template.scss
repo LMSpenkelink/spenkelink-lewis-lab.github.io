@@ -241,6 +241,28 @@
 }
 
 // ==========================================
+// HOMEPAGE SECTION SPACING
+// ==========================================
+
+body:has(.homepage-hero) .home-section:not(.homepage-hero) {
+  padding-top: 2.75rem !important;
+  padding-bottom: 2.75rem !important;
+}
+
+/* First section after the hero */
+body:has(.homepage-hero) .homepage-hero + .home-section {
+  padding-top: 2.75rem !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body:has(.homepage-hero) .home-section:not(.homepage-hero) {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+// ==========================================
 // HOMEPAGE RESEARCH GRID
 // ==========================================
 
