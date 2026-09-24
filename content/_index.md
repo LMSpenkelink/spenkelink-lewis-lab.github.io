@@ -112,7 +112,7 @@ sections:
           size: cover
           text_color_light: true
       spacing:
-        padding: ['140px', '0', '140px', '0']
+        padding: ['0', '0', '0', '0']
       css_class: homepage-banner
 
   #- block: markdown
