@@ -420,13 +420,65 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
 }
 
 // ==========================================
-// HOMEPAGE LATEST NEWS GRID
+// HOMEPAGE LATEST NEWS
 // ==========================================
 
-.home-section .col-12.col-lg-8:has(.card-simple.view-card) {
+/* Overall News row */
+.home-section .row:has(.card-simple.view-card) {
+  position: relative;
+}
+
+/* Latest News heading */
+.home-section .row:has(.card-simple.view-card) > .section-heading {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column;
+
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+
+  text-align: left !important;
+
+  margin: 0 0 1.25rem 0 !important;
+}
+
+.home-section .row:has(.card-simple.view-card) > .section-heading > * {
+  width: auto !important;
+  max-width: none !important;
+
+  text-align: left !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.home-section .row:has(.card-simple.view-card) > .section-heading h1,
+.home-section .row:has(.card-simple.view-card) > .section-heading h2 {
+  font-size: 1.7rem !important;
+  font-weight: 700 !important;
+
+  margin: 0 !important;
+}
+
+
+/* ==========================================
+// NEWS GRID
+// ========================================== */
+
+/* Container holding news cards + See All */
+.home-section .row:has(.card-simple.view-card) > .col-12.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+
+  position: relative;
 }
 
 /* News cards */
@@ -447,6 +499,7 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
     box-shadow 0.2s ease;
 }
 
+/* Hover */
 .home-section .card-simple.view-card:hover {
   transform: translateY(-4px);
 
@@ -459,6 +512,7 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
 .home-section .card-simple.view-card .article-banner {
   width: 100%;
   height: 210px;
+
   object-fit: cover;
   display: block;
 }
@@ -482,101 +536,123 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
 /* Summary */
 .home-section .card-simple.view-card .summary-link {
   display: block;
+
   padding: 0.7rem 1.35rem 1.35rem;
 }
 
 .home-section .card-simple.view-card .summary-link p {
   font-size: 0.9rem;
   line-height: 1.5;
+
   color: #555;
 
   margin: 0;
 }
 
-/* Latest News heading */
-.home-section .row:has(.card-simple.view-card) {
-  position: relative;
-}
-
-.home-section .row:has(.card-simple.view-card) > .section-heading {
-  flex: 0 0 100%;
-  max-width: 100%;
-
-  align-items: flex-start !important;
-  text-align: left !important;
-
-  margin-bottom: 1.25rem !important;
-}
-
-.home-section .row:has(.card-simple.view-card) > .section-heading > * {
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.home-section .row:has(.card-simple.view-card) > .section-heading h1,
-.home-section .row:has(.card-simple.view-card) > .section-heading h2 {
-  font-size: 1.7rem !important;
-  font-weight: 700 !important;
-
-  margin: 0 !important;
-}
-
-/* Let news grid use full width */
-.home-section .row:has(.card-simple.view-card) > .col-12.col-lg-8 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
 
 /* ==========================================
-// NEWS "VIEW ALL" LINK
+// NEWS "VIEW ALL" PILL
 // ========================================== */
 
+/*
+  See All lives inside the news-card container.
+  Move it visually upward into the heading row.
+*/
 .home-section .row:has(.card-simple.view-card) .see-all {
-  position: absolute;
+  position: absolute !important;
 
-  top: 0.25rem;
-  right: 0;
+  right: 0 !important;
+  top: -3.45rem !important;
 
-  display: block;
+  width: auto !important;
 
   margin: 0 !important;
-
-  z-index: 3;
-}
-
-.home-section .row:has(.card-simple.view-card) .see-all a {
-  display: inline-block;
-
   padding: 0 !important;
 
-  background: transparent !important;
+  display: block !important;
+
+  z-index: 5;
+}
+
+/* Same pill styling as Latest Papers */
+.home-section .row:has(.card-simple.view-card) .see-all a {
+  display: inline-flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eef4f8 !important;
   color: #365b78 !important;
 
-  border-radius: 0;
+  border-radius: 999px !important;
+
+  padding: 0.45rem 0.85rem !important;
 
   font-size: 0 !important;
   font-weight: 600;
 
+  line-height: 1;
+
   text-decoration: none !important;
 
-  transition: color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
+/* Replace Hugo's default text */
 .home-section .row:has(.card-simple.view-card) .see-all a::after {
   content: "View all news →";
 
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+  line-height: 1;
 }
 
+/* Hover */
 .home-section .row:has(.card-simple.view-card) .see-all a:hover {
-  background: transparent !important;
-  color: #1264c4 !important;
+  background: #e2edf4 !important;
+  color: #294b66 !important;
 
-  transform: none !important;
+  transform: translateY(-1px) !important;
+
   box-shadow: none !important;
 }
 
+
+/* ==========================================
+// MOBILE
+// ========================================== */
+
+@media (max-width: 768px) {
+
+  .home-section .row:has(.card-simple.view-card) > .col-12.col-lg-8 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .home-section .card-simple.view-card .article-banner {
+    height: 190px;
+  }
+
+  .home-section .row:has(.card-simple.view-card) > .section-heading h1,
+  .home-section .row:has(.card-simple.view-card) > .section-heading h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .home-section .row:has(.card-simple.view-card) .see-all {
+    top: -3.25rem !important;
+    right: 0 !important;
+  }
+
+  .home-section .row:has(.card-simple.view-card) .see-all a {
+    padding: 0.4rem 0.7rem !important;
+  }
+
+  .home-section .row:has(.card-simple.view-card) .see-all a::after {
+    font-size: 0.75rem;
+  }
+}
 
 // ==========================================
 // PUBLICATIONS PAGE CARDS
@@ -886,36 +962,6 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   }
 }
 
-/* ==========================================
-// MOBILE HOMEPAGE COLLECTIONS
-// ========================================== */
-
-@media (max-width: 768px) {
-
-  /* News */
-  .home-section .col-12.col-lg-8:has(.card-simple.view-card) {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .home-section .card-simple.view-card .article-banner {
-    height: 190px;
-  }
-
-  .home-section .row:has(.card-simple.view-card) > .section-heading h1,
-  .home-section .row:has(.card-simple.view-card) > .section-heading h2 {
-    font-size: 1.5rem !important;
-  }
-
-  .home-section .row:has(.card-simple.view-card) .see-all {
-    top: 0.15rem;
-  }
-
-  .home-section .row:has(.card-simple.view-card) .see-all a::after {
-    font-size: 0.8rem;
-  }
-}
-  
 // ==========================================
 // HOMEPAGE HERO
 // ==========================================
