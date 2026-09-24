@@ -1114,18 +1114,10 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
   overflow: hidden !important;
 }
 
-/* Full-width background photograph */
+/* Keep Hugo's existing background image behaviour */
 .homepage-banner .home-section-bg {
-  position: absolute !important;
-  inset: 0 !important;
-
-  width: 100% !important;
-  height: 100% !important;
-
   background-size: cover !important;
-  background-position: center 52% !important;
-
-  z-index: 0 !important;
+  background-position: center center !important;
 }
 
 /* Dark-to-transparent gradient matching the hero */
@@ -1150,14 +1142,12 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
   );
 }
 
-/* Keep any future banner content above the gradient */
+/* Keep any future content above the gradient */
 .homepage-banner > .container {
   position: relative !important;
-
-  height: 100% !important;
-
   z-index: 2 !important;
 }
+
 
 /* ==========================================
 // MOBILE
