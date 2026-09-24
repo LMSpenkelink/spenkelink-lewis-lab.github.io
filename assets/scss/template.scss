@@ -22,13 +22,13 @@
 // SECTION SPACING + HEADINGS
 // ==========================================
 
-/* Remove Hugo's large default section spacing */
+/* Overall People widget spacing */
 .people-widget {
-  padding-top: 0rem !important;
+  padding-top: 0 !important;
   padding-bottom: 2.5rem !important;
 }
 
-/* Remove extra spacing from the People section row */
+/* Remove Hugo's extra row spacing */
 .people-widget > .container > .row {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -43,7 +43,7 @@
 
   text-align: left !important;
 
-  margin-top: 3rem !important;
+  margin-top: 0 !important;
   margin-bottom: 1rem !important;
 
   padding-bottom: 0.6rem;
@@ -51,17 +51,23 @@
   border-bottom: 1px solid rgba(25, 70, 110, 0.18);
 }
 
-/* First heading sits close beneath the banner */
+/* Add separation before every group heading except the first */
+.people-widget .people-person + h2,
+.people-widget .row + h2 {
+  margin-top: 3rem !important;
+}
+
+/* First heading stays close to the banner */
 .people-widget h2:first-of-type {
   margin-top: 0 !important;
 }
 
-/* Remove excess space before the actual people cards */
+/* Remove excess row gap between cards */
 .people-widget .row {
   row-gap: 0 !important;
 }
 
-/* Remove Hugo's outer spacing around the People block */
+/* Space between banner and People content */
 .home-section:has(.people-widget) {
   padding-top: 2rem !important;
   padding-bottom: 2.5rem !important;
