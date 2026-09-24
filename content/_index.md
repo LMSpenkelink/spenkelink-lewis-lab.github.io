@@ -23,7 +23,7 @@ sections:
       subtitle: ''
       text: |
         <div class="research-header">
-          <a class="research-tour-link" href="/tour/">View our research →</a>
+          <a class="research-tour-link" href="/tour/">VIEW OUR RESEARCH →</a>
         </div>
 
         <div class="research-grid">
