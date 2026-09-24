@@ -22,26 +22,39 @@
 // SECTION SPACING + HEADINGS
 // ==========================================
 
+/* Remove Hugo's large default section spacing */
 .people-widget {
-  padding-top: 2.25rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
+/* Remove extra spacing from the People section row */
+.people-widget > .container > .row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Group headings */
 .people-widget h2 {
   font-size: 1.75rem;
   font-weight: 700;
 
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 
-  padding-bottom: 0.65rem;
+  padding-bottom: 0.6rem;
 
   border-bottom: 1px solid rgba(25, 70, 110, 0.18);
 }
 
-/* First group begins closer to the banner */
+/* First heading sits close beneath the banner */
 .people-widget h2:first-of-type {
-  margin-top: 0;
+  margin-top: 0 !important;
+}
+
+/* Remove excess space before the actual people cards */
+.people-widget .row {
+  row-gap: 0 !important;
 }
 
 // ==========================================
@@ -206,8 +219,9 @@
 @media (max-width: 768px) {
 
   .people-widget h2 {
-    font-size: 1.6rem;
-    margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   }
 
   .people-widget .people-person {
