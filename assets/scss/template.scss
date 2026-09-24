@@ -873,8 +873,9 @@
   z-index: 2 !important;
 
   flex: none !important;
-  width: 520px !important;
-  max-width: 520px !important;
+
+  width: auto !important;
+  max-width: none !important;
 
   padding: 0 !important;
 
@@ -891,6 +892,8 @@
   letter-spacing: -0.03em;
 
   margin: 0 0 1.5rem 0 !important;
+
+  white-space: nowrap;
 }
 
 /* Tagline */
@@ -902,13 +905,12 @@
   line-height: 1.4 !important;
 
   margin-bottom: 1.25rem !important;
+
+  white-space: nowrap;
 }
 
 /* Description */
 .homepage-hero .hero-description {
-  width: 100% !important;
-  max-width: 500px !important;
-
   color: rgba(255, 255, 255, 0.82) !important;
 
   font-size: 1rem !important;
@@ -916,6 +918,24 @@
   line-height: 1.65 !important;
 
   margin: 0 !important;
+
+  white-space: nowrap;
+}
+
+/* Smaller desktop/laptop screens */
+@media (max-width: 1200px) {
+
+  .homepage-hero h1 {
+    font-size: 2.7rem !important;
+  }
+
+  .homepage-hero .hero-tagline {
+    font-size: 1.2rem !important;
+  }
+
+  .homepage-hero .hero-description {
+    font-size: 0.9rem !important;
+  }
 }
 
 /* Mobile */
@@ -935,18 +955,21 @@
 
   .homepage-hero h1 {
     font-size: 2.2rem !important;
+    white-space: normal;
   }
 
   .homepage-hero .hero-tagline {
-    font-size: 1.15rem !important;
+    font-size: 1.1rem !important;
+    white-space: normal;
   }
 
   .homepage-hero .hero-description {
     max-width: 420px !important;
     font-size: 0.95rem !important;
+    white-space: normal;
   }
 
   .homepage-hero .hero-media::after {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.68);
   }
 }
