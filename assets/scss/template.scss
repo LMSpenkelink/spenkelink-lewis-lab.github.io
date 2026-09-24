@@ -990,7 +990,7 @@
 // HOMEPAGE TRANSPARENT NAVBAR
 // ==========================================
 
-/* Place navbar over hero */
+/* Place navbar over the hero */
 body:has(.homepage-hero) .page-header {
   position: absolute !important;
   top: 0 !important;
@@ -1002,19 +1002,24 @@ body:has(.homepage-hero) .page-header {
 }
 
 /* Transparent navbar */
-body:has(.homepage-hero) .navbar {
+body:has(.homepage-hero) #navbar-main {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
 }
 
-/* Hide Hugo's existing logo / brand */
-body:has(.homepage-hero) .navbar-brand {
+/* Hide Hugo's existing desktop logo/brand */
+body:has(.homepage-hero) #navbar-main > .container-xl > .d-none.d-lg-inline-flex {
   display: none !important;
 }
 
-/* Create our own simple text brand */
-body:has(.homepage-hero) .navbar .container::before {
+/* Hide Hugo's existing mobile logo/brand */
+body:has(.homepage-hero) .navbar-brand-mobile-wrapper {
+  display: none !important;
+}
+
+/* Create our own text brand */
+body:has(.homepage-hero) #navbar-main > .container-xl::before {
   content: "Spenkelink & Lewis labs";
 
   display: block;
@@ -1027,25 +1032,25 @@ body:has(.homepage-hero) .navbar .container::before {
 
   white-space: nowrap;
 
-  margin-right: auto;
+  margin-right: 2.5rem;
 }
 
 /* Navigation links */
-body:has(.homepage-hero) .navbar-nav .nav-link {
+body:has(.homepage-hero) #navbar-main .nav-link {
   color: rgba(255, 255, 255, 0.88) !important;
 }
 
-body:has(.homepage-hero) .navbar-nav .nav-link:hover {
+body:has(.homepage-hero) #navbar-main .nav-link:hover {
   color: #ffffff !important;
 }
 
-/* Search icon */
-body:has(.homepage-hero) .navbar svg,
-body:has(.homepage-hero) .navbar i {
+/* Search and other navbar icons */
+body:has(.homepage-hero) #navbar-main svg,
+body:has(.homepage-hero) #navbar-main i {
   color: #ffffff !important;
 }
 
-/* Hero content clears overlaid navbar */
+/* Give hero content room beneath navbar */
 body:has(.homepage-hero) .homepage-hero > .container {
   padding-top: 65px !important;
 }
@@ -1055,48 +1060,55 @@ body:has(.homepage-hero) .homepage-hero > .container {
    DESKTOP
    ========================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
 
   /* No hamburger on desktop */
-  body:has(.homepage-hero) .navbar-toggler {
+  body:has(.homepage-hero) #navbar-main .navbar-toggler {
     display: none !important;
+  }
+
+  /* Push navigation to the right */
+  body:has(.homepage-hero) #navbar-content {
+    margin-left: auto !important;
   }
 }
 
 
 /* ==========================================
-   MOBILE
+   MOBILE / TABLET
    ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
 
-  /* Slightly smaller brand */
-  body:has(.homepage-hero) .navbar .container::before {
+  /* Brand text */
+  body:has(.homepage-hero) #navbar-main > .container-xl::before {
     font-size: 0.9rem;
+    margin-right: auto;
   }
 
-  /* Hide desktop navigation links until menu opens */
-  body:has(.homepage-hero) .navbar-collapse:not(.show) {
-    display: none !important;
-  }
-
-  /* Show hamburger */
-  body:has(.homepage-hero) .navbar-toggler {
+  /* Keep hamburger visible */
+  body:has(.homepage-hero) #navbar-main .navbar-toggler {
     display: block !important;
 
     color: #ffffff !important;
     border: 0 !important;
   }
 
-  body:has(.homepage-hero) .navbar-toggler-icon,
-  body:has(.homepage-hero) .navbar-toggler svg,
-  body:has(.homepage-hero) .navbar-toggler i {
+  /* Hamburger icon */
+  body:has(.homepage-hero) #navbar-main .navbar-toggler-icon,
+  body:has(.homepage-hero) #navbar-main .navbar-toggler svg,
+  body:has(.homepage-hero) #navbar-main .navbar-toggler i {
     color: #ffffff !important;
     fill: #ffffff !important;
   }
 
+  /* Collapsed menu */
+  body:has(.homepage-hero) #navbar-content:not(.show) {
+    display: none !important;
+  }
+
   /* Open mobile menu */
-  body:has(.homepage-hero) .navbar-collapse.show {
+  body:has(.homepage-hero) #navbar-content.show {
     position: absolute;
 
     top: 100%;
@@ -1109,11 +1121,11 @@ body:has(.homepage-hero) .homepage-hero > .container {
     background: rgba(0, 0, 0, 0.94) !important;
   }
 
-  body:has(.homepage-hero) .navbar-collapse.show .nav-link {
+  body:has(.homepage-hero) #navbar-content.show .nav-link {
     color: #ffffff !important;
   }
 
-  /* More room underneath mobile navbar */
+  /* Give hero a little more room below mobile navbar */
   body:has(.homepage-hero) .homepage-hero > .container {
     padding-top: 70px !important;
   }
