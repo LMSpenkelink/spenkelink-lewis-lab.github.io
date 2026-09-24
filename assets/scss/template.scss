@@ -794,7 +794,7 @@
   align-items: center;
 }
 
-/* Make Hugo's hero row fill the section */
+/* Keep the hero content positioned correctly */
 .homepage-hero .container,
 .homepage-hero .row {
   position: relative;
@@ -802,31 +802,44 @@
   width: 100%;
 }
 
-/* Turn the hero image into a full-section background */
+/* Turn Hugo's hero image into a full-width background */
 .homepage-hero .hero-media {
   position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
+
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 50% !important;
+
+  width: 100vw !important;
   max-width: none !important;
   height: 100% !important;
+
+  transform: translateX(-50%);
+
   padding: 0 !important;
   margin: 0 !important;
+
   z-index: -2;
 }
 
+/* Make the photograph fill the entire hero */
 .homepage-hero .hero-media img {
   width: 100% !important;
   height: 100% !important;
+
   object-fit: cover !important;
   object-position: center center !important;
+
   display: block;
 }
 
-/* Dark gradient over the photograph */
+/* Dark left-to-right gradient over the photograph */
 .homepage-hero::after {
   content: "";
+
   position: absolute;
   inset: 0;
+
   z-index: 1;
   pointer-events: none;
 
@@ -840,7 +853,7 @@
   );
 }
 
-/* Keep hero text above the photograph and gradient */
+/* Keep the text above the photograph and gradient */
 .homepage-hero .container {
   z-index: 2;
 }
