@@ -36,8 +36,12 @@
 
 /* Group headings */
 .people-widget h2 {
+  width: 100% !important;
+
   font-size: 1.75rem;
   font-weight: 700;
+
+  text-align: left !important;
 
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
