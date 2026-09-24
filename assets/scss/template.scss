@@ -1099,6 +1099,71 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 }
 
 // ==========================================
+// HOMEPAGE BOTTOM BANNER
+// ==========================================
+
+.homepage-banner {
+  position: relative !important;
+
+  min-height: 280px !important;
+
+  overflow: hidden !important;
+}
+
+/* Keep Hugo's background photograph full-width */
+.homepage-banner .home-section-bg {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+/* Dark-to-transparent gradient matching the hero */
+.homepage-banner::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.90) 0%,
+    rgba(0, 0, 0, 0.82) 18%,
+    rgba(0, 0, 0, 0.62) 32%,
+    rgba(0, 0, 0, 0.34) 45%,
+    rgba(0, 0, 0, 0.10) 58%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+/* Keep any future banner content above the gradient */
+.homepage-banner > .container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .homepage-banner {
+    min-height: 220px !important;
+  }
+
+  .homepage-banner::after {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.58) 45%,
+      rgba(0, 0, 0, 0.18) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+// ==========================================
 // HOMEPAGE HERO
 // ==========================================
 
