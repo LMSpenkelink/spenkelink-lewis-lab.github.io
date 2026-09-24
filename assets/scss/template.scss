@@ -788,8 +788,9 @@
 
 .homepage-hero {
   position: relative !important;
-  height: 500px !important;
-  min-height: 500px !important;
+
+  height: 400px !important;
+  min-height: 400px !important;
 
   padding: 0 !important;
   margin: 0 !important;
@@ -800,7 +801,9 @@
 /* Main content container */
 .homepage-hero > .container {
   position: relative !important;
+
   height: 100% !important;
+
   z-index: 2 !important;
 }
 
@@ -830,6 +833,7 @@
   margin: 0 !important;
 
   z-index: -1 !important;
+
   overflow: hidden !important;
 }
 
@@ -847,7 +851,7 @@
   display: block !important;
 }
 
-/* Dark left-to-right gradient */
+/* Strong dark-to-transparent gradient */
 .homepage-hero .hero-media::after {
   content: "";
 
@@ -855,27 +859,30 @@
   inset: 0;
 
   z-index: 1;
+
   pointer-events: none;
 
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.94) 0%,
-    rgba(0, 0, 0, 0.86) 22%,
-    rgba(0, 0, 0, 0.60) 40%,
-    rgba(0, 0, 0, 0.25) 58%,
-    rgba(0, 0, 0, 0) 76%
+    rgba(0, 0, 0, 0.97) 0%,
+    rgba(0, 0, 0, 0.93) 18%,
+    rgba(0, 0, 0, 0.78) 32%,
+    rgba(0, 0, 0, 0.48) 45%,
+    rgba(0, 0, 0, 0.16) 58%,
+    rgba(0, 0, 0, 0) 70%
   );
 }
 
-/* Text block */
+/* Text area */
 .homepage-hero .row > .col-12:first-child {
   position: relative !important;
+
   z-index: 2 !important;
 
   flex: none !important;
 
-  width: auto !important;
-  max-width: none !important;
+  width: 680px !important;
+  max-width: 680px !important;
 
   padding: 0 !important;
 
@@ -886,54 +893,58 @@
 .homepage-hero h1 {
   color: #ffffff !important;
 
-  font-size: 3.1rem !important;
-  font-weight: 600 !important;
+  font-size: 2.65rem !important;
+  font-weight: 700 !important;
   line-height: 1.05 !important;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
 
-  margin: 0 0 1.5rem 0 !important;
+  margin: 0 0 0.45rem 0 !important;
 
   white-space: nowrap;
 }
 
 /* Tagline */
 .homepage-hero .hero-tagline {
-  color: #ffffff !important;
+  color: rgba(255, 255, 255, 0.92) !important;
 
-  font-size: 1.35rem !important;
-  font-weight: 500 !important;
-  line-height: 1.4 !important;
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
 
-  margin-bottom: 1.25rem !important;
+  margin: 0 0 1.45rem 0 !important;
 
   white-space: nowrap;
 }
 
 /* Description */
 .homepage-hero .hero-description {
-  color: rgba(255, 255, 255, 0.82) !important;
+  width: 520px !important;
+  max-width: 520px !important;
 
-  font-size: 1rem !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+
+  font-size: 0.95rem !important;
   font-weight: 400 !important;
-  line-height: 1.65 !important;
+  line-height: 1.55 !important;
 
   margin: 0 !important;
-
-  white-space: nowrap;
 }
 
 /* Smaller desktop/laptop screens */
 @media (max-width: 1200px) {
 
   .homepage-hero h1 {
-    font-size: 2.7rem !important;
+    font-size: 2.35rem !important;
   }
 
   .homepage-hero .hero-tagline {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
 
   .homepage-hero .hero-description {
+    width: 470px !important;
+    max-width: 470px !important;
+
     font-size: 0.9rem !important;
   }
 }
@@ -942,8 +953,8 @@
 @media (max-width: 768px) {
 
   .homepage-hero {
-    height: 500px !important;
-    min-height: 500px !important;
+    height: 430px !important;
+    min-height: 430px !important;
   }
 
   .homepage-hero .row > .col-12:first-child {
@@ -954,22 +965,23 @@
   }
 
   .homepage-hero h1 {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
     white-space: normal;
   }
 
   .homepage-hero .hero-tagline {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
     white-space: normal;
   }
 
   .homepage-hero .hero-description {
-    max-width: 420px !important;
-    font-size: 0.95rem !important;
-    white-space: normal;
+    width: 100% !important;
+    max-width: 390px !important;
+
+    font-size: 0.9rem !important;
   }
 
   .homepage-hero .hero-media::after {
-    background: rgba(0, 0, 0, 0.68);
+    background: rgba(0, 0, 0, 0.70);
   }
 }
