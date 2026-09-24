@@ -1523,3 +1523,13 @@ body:has(.homepage-hero) .homepage-hero > .container {
     padding-top: 70px !important;
   }
 }
+
+// ==========================================
+// HOMEPAGE FOOTER
+// ==========================================
+
+/* Hide the footer on the homepage only */
+body:has(.homepage-hero) footer {
+  display: none !important;
+}
+
