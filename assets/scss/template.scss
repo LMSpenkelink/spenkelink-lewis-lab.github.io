@@ -407,19 +407,34 @@ body:not(:has(.homepage-hero)) .home-section:has(.people-widget) {
 // INDIVIDUAL PROFILE PAGE PORTRAITS
 // ==========================================
 
+/* Align the left profile column with the top of the biography */
+#profile-page > .container > .row {
+  align-items: flex-start !important;
+}
+
+/* Remove extra top spacing from the profile column */
+#profile-page #profile {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* All individual author/profile page portraits */
 #profile .avatar {
-  width: 180px !important;
-  max-width: 180px !important;
-  height: 220px !important;
+  display: block !important;
+
+  width: 230px !important;
+  max-width: 230px !important;
+  height: 280px !important;
 
   object-fit: cover !important;
   object-position: center center !important;
 
   border-radius: 12px !important;
 
+  margin-top: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  margin-bottom: 1.1rem !important;
 }
 
 /* Override Hugo's default circular avatar */
@@ -428,21 +443,24 @@ body:not(:has(.homepage-hero)) .home-section:has(.people-widget) {
 }
 
 
-/* ==========================================
+// ==========================================
 // MOBILE
-// ========================================== */
+// ==========================================
 
 @media (max-width: 768px) {
 
   #profile .avatar {
-    width: 160px !important;
-    max-width: 160px !important;
-    height: 195px !important;
+    width: 190px !important;
+    max-width: 190px !important;
+    height: 230px !important;
 
     object-fit: cover !important;
     object-position: center center !important;
 
     border-radius: 12px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   #profile .avatar-circle {
