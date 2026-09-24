@@ -1808,7 +1808,7 @@ body:has(.homepage-hero) footer {
 }
 
 /* Page title */
-.internal-page-banner-title {
+.internal-banner-title {
   color: #ffffff !important;
 
   font-size: 2.5rem !important;
@@ -1820,7 +1820,7 @@ body:has(.homepage-hero) footer {
 
   margin: 0 !important;
 
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -1848,7 +1848,7 @@ body:has(.homepage-hero) footer {
     );
   }
 
-  .internal-page-banner-title {
+  .internal-banner-title {
     font-size: 2rem !important;
   }
 
