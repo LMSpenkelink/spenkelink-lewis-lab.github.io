@@ -1380,6 +1380,127 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 }
 
 // ==========================================
+// INTERNAL PAGE NAVBAR
+// ==========================================
+
+/*
+ * Dark navigation used throughout the site.
+ * The homepage overrides this with its existing
+ * transparent hero navigation below.
+ */
+
+body:not(:has(.homepage-hero)) #navbar-main {
+  background: #0f202d !important;
+
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 14px rgba(0, 0, 0, 0.10) !important;
+
+  border: none !important;
+}
+
+
+/* ==========================================
+// BRAND
+// ========================================== */
+
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand {
+  color: #ffffff !important;
+}
+
+body:not(:has(.homepage-hero)) #navbar-main .navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+
+/* ==========================================
+// NAVIGATION LINKS
+// ========================================== */
+
+body:not(:has(.homepage-hero)) #navbar-main .nav-link {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.84) !important;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+body:not(:has(.homepage-hero)) #navbar-main .nav-link:hover {
+  color: #ffffff !important;
+}
+
+
+/* ==========================================
+// ACTIVE PAGE
+// ========================================== */
+
+body:not(:has(.homepage-hero)) #navbar-main .nav-link.active {
+  color: #56d6e9 !important;
+  font-weight: 600;
+}
+
+body:not(:has(.homepage-hero)) #navbar-main .nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.2rem;
+
+  height: 3px;
+
+  background: #56d6e9;
+
+  border-radius: 999px;
+}
+
+
+/* ==========================================
+// SEARCH + NAVBAR ICONS
+// ========================================== */
+
+body:not(:has(.homepage-hero)) #navbar-main svg,
+body:not(:has(.homepage-hero)) #navbar-main i {
+  color: rgba(255, 255, 255, 0.90) !important;
+}
+
+body:not(:has(.homepage-hero)) #navbar-main button:hover svg,
+body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
+  color: #ffffff !important;
+}
+
+
+/* ==========================================
+// MOBILE
+// ========================================== */
+
+@media (max-width: 991.98px) {
+
+  body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler {
+    color: #ffffff !important;
+    border: 0 !important;
+  }
+
+  body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler-icon,
+  body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler svg,
+  body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler i {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+
+  body:not(:has(.homepage-hero)) #navbar-content.show {
+    background: #0f202d !important;
+  }
+
+  body:not(:has(.homepage-hero)) #navbar-main .nav-link.active::after {
+    display: none;
+  }
+}
+
+// ==========================================
 // HOMEPAGE TRANSPARENT NAVBAR
 // ==========================================
 
