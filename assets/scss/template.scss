@@ -797,15 +797,19 @@
   overflow: hidden !important;
 }
 
-/* Main content area */
+/* Main content container */
 .homepage-hero > .container {
   position: relative !important;
   height: 100% !important;
   z-index: 2 !important;
 }
 
+/* Hero row */
 .homepage-hero > .container > .row {
   height: 100% !important;
+  margin: 0 !important;
+
+  display: flex !important;
   align-items: center !important;
 }
 
@@ -843,7 +847,7 @@
   display: block !important;
 }
 
-/* Dark gradient directly over photograph */
+/* Dark left-to-right gradient */
 .homepage-hero .hero-media::after {
   content: "";
 
@@ -855,21 +859,24 @@
 
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.92) 0%,
-    rgba(0, 0, 0, 0.82) 22%,
-    rgba(0, 0, 0, 0.55) 40%,
-    rgba(0, 0, 0, 0.22) 58%,
+    rgba(0, 0, 0, 0.94) 0%,
+    rgba(0, 0, 0, 0.86) 22%,
+    rgba(0, 0, 0, 0.60) 40%,
+    rgba(0, 0, 0, 0.25) 58%,
     rgba(0, 0, 0, 0) 76%
   );
 }
 
-/* Text column */
+/* Text block */
 .homepage-hero .row > .col-12:first-child {
   position: relative !important;
   z-index: 2 !important;
 
-  flex: 0 0 45% !important;
-  max-width: 45% !important;
+  flex: none !important;
+  width: 520px !important;
+  max-width: 520px !important;
+
+  padding: 0 !important;
 
   text-align: left !important;
 }
@@ -882,11 +889,12 @@
   font-weight: 600 !important;
   line-height: 1.08 !important;
 
-  margin-bottom: 1.4rem !important;
+  margin: 0 0 1.5rem 0 !important;
 }
 
 /* Description */
 .homepage-hero .hero-lead {
+  width: 100% !important;
   max-width: 520px !important;
 
   color: #ffffff !important;
@@ -900,7 +908,7 @@
   color: #ffffff !important;
 }
 
-/* Mobile */
+/* Tablet/mobile */
 @media (max-width: 768px) {
 
   .homepage-hero {
@@ -909,8 +917,9 @@
   }
 
   .homepage-hero .row > .col-12:first-child {
-    flex: 0 0 100% !important;
+    width: 100% !important;
     max-width: 100% !important;
+    padding: 0 1.25rem !important;
   }
 
   .homepage-hero h1 {
@@ -918,11 +927,11 @@
   }
 
   .homepage-hero .hero-lead {
-    max-width: 90% !important;
+    max-width: 420px !important;
     font-size: 1rem !important;
   }
 
   .homepage-hero .hero-media::after {
-    background: rgba(0, 0, 0, 0.62);
+    background: rgba(0, 0, 0, 0.65);
   }
 }
