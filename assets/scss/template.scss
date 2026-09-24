@@ -1105,15 +1105,27 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 .homepage-banner {
   position: relative !important;
 
-  min-height: 280px !important;
+  height: 300px !important;
+  min-height: 300px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
 
   overflow: hidden !important;
 }
 
-/* Keep Hugo's background photograph full-width */
+/* Full-width background photograph */
 .homepage-banner .home-section-bg {
-  background-position: center center !important;
+  position: absolute !important;
+  inset: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
   background-size: cover !important;
+  background-position: center 52% !important;
+
+  z-index: 0 !important;
 }
 
 /* Dark-to-transparent gradient matching the hero */
@@ -1140,16 +1152,26 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 
 /* Keep any future banner content above the gradient */
 .homepage-banner > .container {
-  position: relative;
+  position: relative !important;
 
-  z-index: 2;
+  height: 100% !important;
+
+  z-index: 2 !important;
 }
 
-/* Mobile */
+/* ==========================================
+// MOBILE
+// ========================================== */
+
 @media (max-width: 768px) {
 
   .homepage-banner {
+    height: 220px !important;
     min-height: 220px !important;
+  }
+
+  .homepage-banner .home-section-bg {
+    background-position: center center !important;
   }
 
   .homepage-banner::after {
