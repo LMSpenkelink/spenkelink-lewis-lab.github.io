@@ -16,7 +16,9 @@ sections:
         <br>
         
         The **Spenkelink & Lewis labs** aim to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
-
+    design:
+      css_class: homepage-hero
+    
   - block: markdown
     content:
       title: Our Research
