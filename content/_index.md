@@ -11,7 +11,7 @@ sections:
         Spenkelink & Lewis
         labs
       image:
-        filename: pretty.jpg
+        filename: hero.jpg
       text: |
         <br>
         
