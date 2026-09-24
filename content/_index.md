@@ -7,15 +7,13 @@ type: landing
 sections:
   - block: hero
     content:
-      title: |
-        Spenkelink & Lewis
-        labs
+      title: Spenkelink & Lewis Labs
       image:
         filename: hero.jpg
       text: |
-        <br>
+        <div class="hero-tagline">Visualising biology, one molecule at a time</div>
         
-        The **Spenkelink & Lewis labs** aim to develop new visual biochemistry tools to study dynamic biological processes, one at a time and with near-atomic resolution.
+        <div class="hero-description">We develop new visual biochemistry tools to uncover the molecular mechanisms that drive dynamic biological processes, with near-atomic resolution.</div>
     design:
       css_class: homepage-hero
     
