@@ -1013,6 +1013,151 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 }
 
 // ==========================================
+// PUBLICATIONS PAGE BANNER
+// ==========================================
+
+/* Native Hugo Publications banner */
+body:not(:has(.homepage-hero)) .page-body > .article-header {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 190px !important;
+  min-height: 190px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+}
+
+/* Banner image */
+body:not(:has(.homepage-hero)) .page-body > .article-header .article-banner {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  height: 190px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  object-fit: cover !important;
+  object-position: center 48% !important;
+}
+
+/* Same dark left-to-right gradient as the other internal banners */
+body:not(:has(.homepage-hero)) .page-body > .article-header::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.68) 20%,
+    rgba(0, 0, 0, 0.38) 40%,
+    rgba(0, 0, 0, 0.10) 62%,
+    rgba(0, 0, 0, 0) 78%
+  );
+}
+
+/* Move the native Publications title over the banner */
+body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 {
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 50% !important;
+
+  transform: translateX(-50%) !important;
+
+  z-index: 2 !important;
+
+  width: 100% !important;
+  max-width: 1140px !important;
+  height: 190px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  pointer-events: none;
+}
+
+/* Publications title */
+body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 h1 {
+  color: #ffffff !important;
+
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em;
+
+  text-align: left !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Give filters comfortable space below the banner */
+body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 + .universal-wrapper {
+  padding-top: 2rem !important;
+}
+
+
+/* ==========================================
+// PUBLICATIONS BANNER — MOBILE
+// ========================================== */
+
+@media (max-width: 768px) {
+
+  body:not(:has(.homepage-hero)) .page-body > .article-header {
+    height: 150px !important;
+    min-height: 150px !important;
+  }
+
+  body:not(:has(.homepage-hero)) .page-body > .article-header .article-banner {
+    height: 150px !important;
+
+    object-position: center center !important;
+  }
+
+  body:not(:has(.homepage-hero)) .page-body > .article-header::after {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.80) 0%,
+      rgba(0, 0, 0, 0.58) 50%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+  }
+
+  body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 {
+    height: 150px !important;
+
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 h1 {
+    font-size: 2rem !important;
+  }
+
+  body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 + .universal-wrapper {
+    padding-top: 1.5rem !important;
+  }
+}
+
+// ==========================================
 // PUBLICATIONS PAGE CARDS
 // ==========================================
 
