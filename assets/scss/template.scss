@@ -404,6 +404,28 @@ body:not(:has(.homepage-hero)) .home-section:has(.people-widget) {
 }
 
 // ==========================================
+// HOMEPAGE SECTION SPACING
+// ==========================================
+
+/* Our Research */
+body:has(.homepage-hero) .home-section:has(.research-grid) {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+/* Latest Papers */
+body:has(.homepage-hero) .home-section:has(.pub-list-item.view-citation) {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+/* Latest News */
+body:has(.homepage-hero) .home-section:has(.card-simple.view-card) {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+// ==========================================
 // HOMEPAGE RESEARCH
 // ==========================================
 
