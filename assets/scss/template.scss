@@ -57,6 +57,12 @@
   row-gap: 0 !important;
 }
 
+/* Remove Hugo's outer spacing around the People block */
+.home-section:has(.people-widget) {
+  padding-top: 1.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
 // ==========================================
 // PERSON CARDS
 // ==========================================
