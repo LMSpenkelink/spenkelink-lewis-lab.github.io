@@ -5,11 +5,30 @@ date: 2024-12-23
 type: landing
 
 sections:
+  - block: markdown
+    content:
+      title:
+      subtitle: ''
+      text: |
+        <h1 class="internal-banner-title">Our team</h1>
+    design:
+      columns: '1'
+      background:
+        image:
+          filename: internal-banner.jpg
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['0', '0', '0', '0']
+      css_class: internal-page-banner
+
   - block: people
     content:
-      title: Our team
-      # Choose which groups/teams of users to display.
-      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
+      title:
       user_groups:
           - Principal investigators
           - Laboratory manager
