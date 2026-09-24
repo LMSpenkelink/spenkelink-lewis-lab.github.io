@@ -1703,9 +1703,13 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
 // MOBILE
 // ========================================== */
 
+/* ==========================================
+// MOBILE
+// ========================================== */
+
 @media (max-width: 991.98px) {
 
-  /* Keep mobile navbar laid out cleanly */
+  /* Mobile navbar top row */
   body:not(:has(.homepage-hero)) #navbar-main > .container-xl {
     display: flex !important;
     align-items: center !important;
@@ -1716,6 +1720,9 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
   body:not(:has(.homepage-hero)) .navbar-brand-mobile-wrapper {
     display: flex !important;
     align-items: center !important;
+
+    flex: 0 1 auto !important;
+    width: auto !important;
 
     margin-right: auto !important;
   }
@@ -1746,17 +1753,31 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
     content: "Spenkelink & Lewis labs";
   }
 
-  /* Hamburger stays on the far right */
+  /* Search/icons stay to the right of the brand */
+  body:not(:has(.homepage-hero)) #navbar-main .nav-icons {
+    position: static !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    flex: 0 0 auto !important;
+
+    margin-left: auto !important;
+    margin-right: 0.65rem !important;
+
+    order: 5 !important;
+  }
+
+  /* Hamburger sits after search */
   body:not(:has(.homepage-hero)) #navbar-main .navbar-toggler {
     position: static !important;
 
     display: block !important;
 
+    flex: 0 0 auto !important;
     order: 10 !important;
 
-    margin-left: auto !important;
-    margin-right: 0 !important;
-
+    margin: 0 !important;
     padding: 0.25rem !important;
 
     color: #ffffff !important;
@@ -1771,10 +1792,12 @@ body:not(:has(.homepage-hero)) #navbar-main a:hover svg {
     fill: #ffffff !important;
   }
 
-  /* Open mobile navigation sits beneath the top row */
+  /* Open navigation goes onto its own row */
   body:not(:has(.homepage-hero)) #navbar-content {
     flex-basis: 100% !important;
     width: 100% !important;
+
+    order: 20 !important;
   }
 
   body:not(:has(.homepage-hero)) #navbar-content.show {
