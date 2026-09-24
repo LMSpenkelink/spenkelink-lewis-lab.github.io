@@ -772,56 +772,92 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
     0 12px 28px rgba(0, 0, 0, 0.10);
 }
 
+// ==========================================
+// PAPERS "VIEW ALL" PILL
+// ==========================================
 
-/* ==========================================
-// PAPERS "VIEW ALL" LINK
-// ========================================== */
-
-.home-section .row:has(.pub-list-item.view-citation) .see-all {
-  position: absolute;
-
-  top: 0.25rem;
-  right: 0;
-
-  display: block;
-
-  margin: 0 !important;
-
-  z-index: 3;
+/* Make the whole Papers row the positioning reference */
+.home-section .row:has(.pub-list-item.view-citation) {
+  position: relative;
 }
 
-.home-section .row:has(.pub-list-item.view-citation) .see-all a {
-  display: inline-block;
+/* Move See All out of the paper grid visually */
+.home-section .row:has(.pub-list-item.view-citation) .see-all {
+  position: absolute !important;
 
+  top: 0 !important;
+  right: 0 !important;
+
+  width: auto !important;
+
+  margin: 0 !important;
   padding: 0 !important;
 
-  background: transparent !important;
+  display: block !important;
+
+  z-index: 5;
+}
+
+/* Small pill */
+.home-section .row:has(.pub-list-item.view-citation) .see-all a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef4f8 !important;
   color: #365b78 !important;
 
-  border-radius: 0;
+  border-radius: 999px !important;
+
+  padding: 0.45rem 0.85rem !important;
 
   font-size: 0 !important;
   font-weight: 600;
 
+  line-height: 1;
+
   text-decoration: none !important;
 
-  transition: color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
+/* Replace Hugo's original text */
 .home-section .row:has(.pub-list-item.view-citation) .see-all a::after {
   content: "View all papers →";
 
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+  line-height: 1;
 }
 
+/* Hover */
 .home-section .row:has(.pub-list-item.view-citation) .see-all a:hover {
-  background: transparent !important;
-  color: #1264c4 !important;
+  background: #e2edf4 !important;
+  color: #294b66 !important;
 
-  transform: none !important;
+  transform: translateY(-1px) !important;
+
   box-shadow: none !important;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+
+  .home-section .row:has(.pub-list-item.view-citation) .see-all {
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  .home-section .row:has(.pub-list-item.view-citation) .see-all a {
+    padding: 0.4rem 0.7rem !important;
+  }
+
+  .home-section .row:has(.pub-list-item.view-citation) .see-all a::after {
+    font-size: 0.75rem;
+  }
+}
 
 /* ==========================================
 // MOBILE HOMEPAGE COLLECTIONS
@@ -863,14 +899,6 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
     font-size: 1.5rem !important;
   }
 
-  .home-section .row:has(.pub-list-item.view-citation) .see-all {
-    top: 0.15rem;
-  }
-
-  .home-section .row:has(.pub-list-item.view-citation) .see-all a::after {
-    font-size: 0.8rem;
-  }
-}
 
 // ==========================================
 // HOMEPAGE HERO
