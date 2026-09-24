@@ -1036,7 +1036,6 @@ body:not(:has(.homepage-hero)) .page-body > .article-header .article-banner {
 
   width: 100% !important;
   max-width: none !important;
-
   height: 190px !important;
 
   margin: 0 !important;
@@ -1046,7 +1045,7 @@ body:not(:has(.homepage-hero)) .page-body > .article-header .article-banner {
   object-position: center 48% !important;
 }
 
-/* Same dark left-to-right gradient as the other internal banners */
+/* Same gradient as other internal banners */
 body:not(:has(.homepage-hero)) .page-body > .article-header::after {
   content: "";
 
@@ -1054,7 +1053,6 @@ body:not(:has(.homepage-hero)) .page-body > .article-header::after {
   inset: 0;
 
   z-index: 1;
-
   pointer-events: none;
 
   background: linear-gradient(
@@ -1068,18 +1066,16 @@ body:not(:has(.homepage-hero)) .page-body > .article-header::after {
 }
 
 
-/* ==========================================
+// ==========================================
 // PUBLICATIONS TITLE OVER BANNER
-// ========================================== */
+// ==========================================
 
-/* Position native Publications heading over banner */
+/*
+  Pull Hugo's native title wrapper back over the
+  190px banner instead of absolutely positioning it.
+*/
 body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 {
-  position: absolute !important;
-
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-
+  position: relative !important;
   z-index: 2 !important;
 
   width: 100% !important;
@@ -1089,15 +1085,15 @@ body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 {
   display: flex !important;
   align-items: center !important;
 
+  margin-top: -190px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  margin-bottom: 0 !important;
 
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
-
-  pointer-events: none;
 }
 
 /* Publications title */
@@ -1118,19 +1114,19 @@ body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 h1 {
 }
 
 
-/* ==========================================
+// ==========================================
 // PUBLICATIONS CONTENT
-// ========================================== */
+// ==========================================
 
-/* Give filters comfortable space below the banner */
+/* Space between banner and filters */
 body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 + .universal-wrapper {
   padding-top: 2rem !important;
 }
 
 
-/* ==========================================
+// ==========================================
 // PUBLICATIONS BANNER — MOBILE
-// ========================================== */
+// ==========================================
 
 @media (max-width: 768px) {
 
@@ -1141,7 +1137,6 @@ body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 + .universal
 
   body:not(:has(.homepage-hero)) .page-body > .article-header .article-banner {
     height: 150px !important;
-
     object-position: center center !important;
   }
 
@@ -1156,6 +1151,8 @@ body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 + .universal
 
   body:not(:has(.homepage-hero)) .page-body > .universal-wrapper.pt-3 {
     height: 150px !important;
+
+    margin-top: -150px !important;
 
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
