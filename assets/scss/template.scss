@@ -679,10 +679,11 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   margin: 0;
 }
 
-/* ==========================================
+// ==========================================
 // HOMEPAGE LATEST PAPERS
-// ========================================== */
+// ==========================================
 
+/* Overall Papers row */
 .home-section .row:has(.pub-list-item.view-citation) {
   position: relative;
 }
@@ -722,14 +723,22 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   margin: 0 !important;
 }
 
-/* Three-column paper grid */
+
+/* ==========================================
+// PAPERS GRID
+// ========================================== */
+
+/* Container holding papers + See All */
 .home-section .row:has(.pub-list-item.view-citation) > .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 
   display: grid;
+
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
+
+  position: relative;
 }
 
 /* Individual paper cards */
@@ -772,21 +781,24 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
     0 12px 28px rgba(0, 0, 0, 0.10);
 }
 
-// ==========================================
+
+/* ==========================================
 // PAPERS "VIEW ALL" PILL
-// ==========================================
+// ========================================== */
 
-/* Make the whole Papers row the positioning reference */
-.home-section .row:has(.pub-list-item.view-citation) {
-  position: relative;
-}
-
-/* Move See All out of the paper grid visually */
+/*
+  See All lives inside the cards container in Hugo's HTML.
+  Move it visually upward into the heading row.
+*/
 .home-section .row:has(.pub-list-item.view-citation) .see-all {
   position: absolute !important;
 
-  top: 0 !important;
   right: 0 !important;
+
+  /*
+    Move from the top of the cards to the heading line.
+  */
+  top: -3.45rem !important;
 
   width: auto !important;
 
@@ -798,9 +810,10 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   z-index: 5;
 }
 
-/* Small pill */
+/* Small blue-grey pill */
 .home-section .row:has(.pub-list-item.view-citation) .see-all a {
   display: inline-flex !important;
+
   align-items: center;
   justify-content: center;
 
@@ -824,7 +837,7 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
     transform 0.2s ease;
 }
 
-/* Replace Hugo's original text */
+/* Replace Hugo's default See All text */
 .home-section .row:has(.pub-list-item.view-citation) .see-all a::after {
   content: "View all papers →";
 
@@ -842,11 +855,25 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   box-shadow: none !important;
 }
 
-/* Mobile */
+
+/* ==========================================
+// MOBILE
+// ========================================== */
+
 @media (max-width: 768px) {
 
+  .home-section .row:has(.pub-list-item.view-citation) > .col-12 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .home-section .row:has(.pub-list-item.view-citation) > .section-heading h1,
+  .home-section .row:has(.pub-list-item.view-citation) > .section-heading h2 {
+    font-size: 1.5rem !important;
+  }
+
   .home-section .row:has(.pub-list-item.view-citation) .see-all {
-    top: 0 !important;
+    top: -3.25rem !important;
     right: 0 !important;
   }
 
@@ -887,18 +914,6 @@ body:has(.homepage-hero) .homepage-hero + .home-section {
   .home-section .row:has(.card-simple.view-card) .see-all a::after {
     font-size: 0.8rem;
   }
-
-  /* Papers */
-  .home-section .row:has(.pub-list-item.view-citation) > .col-12 {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .home-section .row:has(.pub-list-item.view-citation) > .section-heading h1,
-  .home-section .row:has(.pub-list-item.view-citation) > .section-heading h2 {
-    font-size: 1.5rem !important;
-  }
-}
 
 // ==========================================
 // HOMEPAGE HERO
