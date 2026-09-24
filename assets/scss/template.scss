@@ -347,14 +347,14 @@
 }
 
 // ==========================================
-// THREE-COLUMN PEOPLE GRID
+// TWO-COLUMN PEOPLE GRID
 // ==========================================
 
 @media (min-width: 768px) {
   .people-widget .people-person {
-    width: calc(33.333% - 2rem);
-    max-width: calc(33.333% - 2rem);
-    flex: 0 0 calc(33.333% - 2rem);
+    width: calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+    flex: 0 0 calc(50% - 2rem);
   }
 }
 
