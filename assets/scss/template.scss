@@ -922,6 +922,11 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 // INTERNAL PAGE BOTTOM BANNER
 // ==========================================
 
+/* Remove standard footer so the banner finishes the page */
+body:has(.internal-bottom-banner) footer {
+  display: none !important;
+}
+
 .internal-bottom-banner {
   position: relative !important;
 
