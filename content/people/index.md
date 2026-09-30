@@ -42,4 +42,25 @@ sections:
       show_interests: true
       show_role: true
       show_social: true
+
+  - block: markdown
+    content:
+      title:
+      subtitle: ''
+      text:
+    design:
+      columns: '1'
+      background:
+        image:
+          filename: banner.jpg
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['0', '0', '0', '0']
+      css_class: internal-bottom-banner
+
 ---
