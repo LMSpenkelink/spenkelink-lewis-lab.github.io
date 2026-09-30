@@ -699,6 +699,229 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
   }
 }
 
+  .research-card img {
+    height: 220px;
+  }
+}
+
+
+// ==========================================
+// RESEARCH PAGE SHOWCASE
+// ==========================================
+
+/* Main research content section */
+.research-showcase-section {
+  padding-top: 3rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.research-showcase-section .universal-wrapper {
+  max-width: 1200px;
+}
+
+.research-showcase {
+  width: 100%;
+}
+
+
+// ==========================================
+// RESEARCH ROWS
+// ==========================================
+
+.research-showcase-row {
+  display: flex;
+  align-items: center;
+
+  gap: 3.5rem;
+
+  width: 100%;
+
+  margin-bottom: 2.75rem;
+}
+
+.research-showcase-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Alternating layout */
+.research-showcase-row.research-showcase-reverse {
+  flex-direction: row-reverse;
+}
+
+
+// ==========================================
+// RESEARCH IMAGES
+// ==========================================
+
+.research-showcase-image {
+  flex: 0 0 52%;
+  width: 52%;
+}
+
+.research-showcase-image img {
+  display: block;
+
+  width: 100%;
+  height: 310px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+// ==========================================
+// RESEARCH TEXT
+// ==========================================
+
+.research-showcase-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-showcase-number {
+  display: flex;
+  align-items: center;
+
+  gap: 0.65rem;
+
+  margin-bottom: 0.65rem;
+}
+
+.research-showcase-number span {
+  color: #1769c2;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+.research-showcase-number i {
+  display: block;
+
+  width: 54px;
+  height: 1px;
+
+  background: rgba(23, 105, 194, 0.45);
+}
+
+.research-showcase-content h2 {
+  color: #102b46;
+
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+
+  margin: 0 0 0.75rem 0;
+}
+
+.research-showcase-content p {
+  color: #4f5963;
+
+  font-size: 1rem;
+  line-height: 1.6;
+
+  margin: 0 0 1.1rem 0;
+}
+
+
+// ==========================================
+// LEARN MORE BUTTON
+// ==========================================
+
+.research-showcase-link {
+  display: inline-flex;
+  align-items: center;
+
+  color: #1769c2 !important;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  border: 1.5px solid #1769c2;
+  border-radius: 999px;
+
+  padding: 0.5rem 1rem;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.research-showcase-link:hover {
+  color: #ffffff !important;
+  background: #1769c2;
+
+  transform: translateY(-2px);
+
+  text-decoration: none !important;
+}
+
+
+// ==========================================
+// RESEARCH PAGE — MOBILE
+// ==========================================
+
+@media (max-width: 768px) {
+
+  .research-showcase-section {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .research-showcase-row,
+  .research-showcase-row.research-showcase-reverse {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 1.4rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .research-showcase-image {
+    flex: none;
+
+    width: 100%;
+  }
+
+  .research-showcase-image img {
+    width: 100%;
+    height: 230px;
+
+    border-radius: 14px;
+  }
+
+  .research-showcase-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .research-showcase-content p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .research-showcase-number {
+    margin-bottom: 0.55rem;
+  }
+}
+
+// ==========================================
+// NEWS PAGE CARDS
+// ==========================================
+
 // ==========================================
 // NEWS PAGE CARDS
 // ==========================================
