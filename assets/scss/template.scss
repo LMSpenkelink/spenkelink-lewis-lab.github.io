@@ -605,12 +605,13 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
   margin-top: 0;
 }
 
+
 /* Research cards */
 .research-card {
   background: #ffffff;
   border-radius: 16px;
 
-  overflow: hidden;
+  overflow: hidden !important;
 
   box-shadow:
     0 2px 8px rgba(0, 0, 0, 0.04),
@@ -629,20 +630,24 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
     0 12px 28px rgba(0, 0, 0, 0.10);
 }
 
-/* Research images */
+
+/* Research images — full bleed */
 .research-card img {
-  width: 100%;
-  height: 280px;
-
-  object-fit: contain;
-  object-position: center center;
-
   display: block;
 
-  margin: 0 auto;
+  width: 100% !important;
+  max-width: none !important;
+  height: 280px !important;
 
-  background: #f7f9fb;
+  object-fit: cover !important;
+  object-position: center center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-radius: 0 !important;
 }
+
 
 /* Research card content */
 .research-card-content {
@@ -695,11 +700,7 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
   }
 
   .research-card img {
-    height: 220px;
-  }
-
-  .research-card img {
-    height: 220px;
+    height: 220px !important;
   }
 }
 
