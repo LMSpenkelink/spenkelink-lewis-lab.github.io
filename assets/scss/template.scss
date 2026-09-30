@@ -919,6 +919,82 @@ body:has(.homepage-hero) .home-section:has(.research-grid) .section-heading h2 {
 }
 
 // ==========================================
+// INTERNAL PAGE BOTTOM BANNER
+// ==========================================
+
+.internal-bottom-banner {
+  position: relative !important;
+
+  height: 180px !important;
+  min-height: 180px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  overflow: hidden !important;
+}
+
+/* Same image treatment as homepage bottom banner */
+.internal-bottom-banner .home-section-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+/* Same gradient as homepage */
+.internal-bottom-banner::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.90) 0%,
+    rgba(0, 0, 0, 0.82) 18%,
+    rgba(0, 0, 0, 0.62) 32%,
+    rgba(0, 0, 0, 0.34) 45%,
+    rgba(0, 0, 0, 0.10) 58%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+/* Keep any future content above the gradient */
+.internal-bottom-banner > .container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+// ==========================================
+// INTERNAL BOTTOM BANNER — MOBILE
+// ==========================================
+
+@media (max-width: 768px) {
+
+  .internal-bottom-banner {
+    height: 140px !important;
+    min-height: 140px !important;
+  }
+
+  .internal-bottom-banner .home-section-bg {
+    background-position: center center !important;
+  }
+
+  .internal-bottom-banner::after {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.58) 45%,
+      rgba(0, 0, 0, 0.18) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+// ==========================================
 // NEWS PAGE CARDS
 // ==========================================
 
