@@ -1,5 +1,5 @@
 ---
-title: Callum and Via present at the Single-molecule Discussion Club!
+title: Callum and Via present at the Single-molecule Discussion Club
 date: 2026-06-05
 ---
 
