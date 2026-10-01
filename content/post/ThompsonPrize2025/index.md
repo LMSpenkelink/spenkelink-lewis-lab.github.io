@@ -1,5 +1,5 @@
 ---
-title: Nicholas Kusi-Appauh is a finalist at the Thompson Prize Symposium
+title: Nicholas is a finalist at the Thompson Prize Symposium
 date: 2025-11-28
 ---
 
