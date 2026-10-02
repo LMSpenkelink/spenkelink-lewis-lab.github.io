@@ -102,7 +102,7 @@ sections:
       text: |
         <div class="homepage-contact">
         <h2>Contact Us</h2>
-        <p class="homepage-contact-intro">For general enquiries, collaborations, or opportunities to join the lab, please get in touch with one of the team members below.</p>
+        <p class="homepage-contact-intro">For general enquiries, collaborations, or opportunities to join the lab, please get in touch with one of the lab members below.</p>
         <div class="homepage-contact-grid">
         <div class="homepage-contact-person">
         <h3>Dr Jacob S. Lewis</h3>
