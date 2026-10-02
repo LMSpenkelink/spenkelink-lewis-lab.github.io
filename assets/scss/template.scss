@@ -1917,81 +1917,27 @@ body:has(.page-body > .article-header) .page-footer > * {
   }
 }
 
-// ==========================================
-// HOMEPAGE BOTTOM BANNER
-// ==========================================
-
-.homepage-banner {
-  position: relative !important;
-
-  height: 300px !important;
-  min-height: 300px !important;
-
-  padding: 0 !important;
-  margin: 0 !important;
-
-  overflow: hidden !important;
-}
-
-/* Keep Hugo's existing background image behaviour */
-.homepage-banner .home-section-bg {
-  background-size: cover !important;
-  background-position: center center !important;
-}
-
-/* Dark-to-transparent gradient matching the hero */
-.homepage-banner::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  z-index: 1;
-
-  pointer-events: none;
-
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.90) 0%,
-    rgba(0, 0, 0, 0.82) 18%,
-    rgba(0, 0, 0, 0.62) 32%,
-    rgba(0, 0, 0, 0.34) 45%,
-    rgba(0, 0, 0, 0.10) 58%,
-    rgba(0, 0, 0, 0) 70%
-  );
-}
-
-/* Keep any future content above the gradient */
-.homepage-banner > .container {
-  position: relative !important;
-  z-index: 2 !important;
-}
+// previous section above here...
 
 
 /* ==========================================
-// MOBILE
-// ========================================== */
+   HOMEPAGE CONTACT BANNER
+   ========================================== */
 
-@media (max-width: 768px) {
+.homepage-banner {
+   // new CSS I gave you
+}
 
-  .homepage-banner {
-    height: 220px !important;
-    min-height: 220px !important;
-  }
+// rest of new contact CSS...
+// mobile contact CSS...
 
-  .homepage-banner .home-section-bg {
-    background-position: center center !important;
-  }
 
-  .homepage-banner::after {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.82) 0%,
-      rgba(0, 0, 0, 0.58) 45%,
-      rgba(0, 0, 0, 0.18) 75%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
+/* ==========================================
+   HOMEPAGE HERO
+   ========================================== */
+
+.homepage-hero {
+   // your existing hero CSS continues...
 }
 
 // ==========================================
