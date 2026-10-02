@@ -99,7 +99,46 @@ sections:
     content:
       title:
       subtitle: ''
-      text:
+      text: |
+        <div class="homepage-contact">
+          <h2>Contact Us</h2>
+
+          <p class="homepage-contact-intro">
+            For general enquiries, collaborations, or opportunities to join the lab, please get in touch with one of the team members below.
+          </p>
+
+          <div class="homepage-contact-grid">
+
+            <div class="homepage-contact-person">
+              <h3>Dr Jacob S. Lewis</h3>
+              <p>Principal Investigator</p>
+              <a href="mailto:jacobl@uow.edu.au" class="homepage-contact-email">
+                <span>✉</span>
+                jacobl@uow.edu.au
+              </a>
+            </div>
+
+            <div class="homepage-contact-person">
+              <h3>Dr Lisanne M. Spenkelink</h3>
+              <p>Principal Investigator</p>
+              <a href="mailto:lisanne@uow.edu.au" class="homepage-contact-email">
+                <span>✉</span>
+                lisanne@uow.edu.au
+              </a>
+            </div>
+
+            <div class="homepage-contact-person">
+              <h3>Nicholas Kusi-Appauh</h3>
+              <p>Laboratory Operations Manager</p>
+              <a href="mailto:nicholaska@uow.edu.au" class="homepage-contact-email">
+                <span>✉</span>
+                nicholaska@uow.edu.au
+              </a>
+            </div>
+
+          </div>
+        </div>
+
     design:
       columns: '1'
       background:
