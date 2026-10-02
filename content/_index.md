@@ -121,7 +121,7 @@ sections:
         </a>
         </div>
         <div class="homepage-contact-person">
-        <h3>Nicholas Kusi-Appauh</h3>
+        <h3>Dr Nicholas Kusi-Appauh</h3>
         <p>Laboratory Operations Manager</p>
         <a href="mailto:nicholaska@uow.edu.au" class="homepage-contact-email">
         <span>✉</span>
