@@ -15,7 +15,7 @@ tags:
 featured: false
 ---
 
-Congratulations to Nate and Will who culminated their Honours year with a final seminar. 
+Congratulations to Nate Ruddock and Will Heaton who culminated their Honours year with a final seminar. 
 
 Both presentations highlighted their research projects and the progress they have made throughout their time in our lab.
 
