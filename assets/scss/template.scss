@@ -2953,3 +2953,124 @@ body:has(.homepage-hero) footer {
     padding-right: 1.25rem !important;
   }
 }
+
+
+// ==========================================
+// INDIVIDUAL PUBLICATION PAGES
+// ==========================================
+
+/*
+  Only target individual publication pages.
+  Do not affect the Publications listing or homepage.
+*/
+
+body:has(a[href$=".bib"]) .article-container {
+  max-width: 900px !important;
+}
+
+/* Main publication heading */
+body:has(a[href$=".bib"]) .article-container h1 {
+  color: #102b46 !important;
+
+  font-size: clamp(1.9rem, 3vw, 2.65rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em;
+
+  text-align: left !important;
+
+  margin-bottom: 1.1rem !important;
+}
+
+/* Author list */
+body:has(a[href$=".bib"]) .article-container .article-metadata {
+  color: #566273 !important;
+
+  font-size: 0.95rem !important;
+  line-height: 1.65 !important;
+
+  margin-bottom: 1.25rem !important;
+}
+
+/* Publication links: PDF, Cite, DOI */
+body:has(a[href$=".bib"]) .article-container .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 999px !important;
+
+  padding: 0.5rem 1rem !important;
+
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+body:has(a[href$=".bib"]) .article-container .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Featured scientific figure */
+body:has(a[href$=".bib"]) .article-container .article-header img,
+body:has(a[href$=".bib"]) .article-container .article-banner {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 850px !important;
+  height: auto !important;
+
+  object-fit: contain !important;
+
+  margin: 1.75rem auto 2rem !important;
+
+  border-radius: 10px !important;
+}
+
+/* Abstract and main content */
+body:has(a[href$=".bib"]) .article-container .article-style {
+  color: #344454 !important;
+
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+body:has(a[href$=".bib"]) .article-container .article-style h2 {
+  color: #102b46 !important;
+
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+
+  margin-top: 2rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body:has(a[href$=".bib"]) .article-container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  body:has(a[href$=".bib"]) .article-container h1 {
+    font-size: 1.8rem !important;
+  }
+
+  body:has(a[href$=".bib"]) .article-container .article-metadata {
+    font-size: 0.9rem !important;
+  }
+
+  body:has(a[href$=".bib"]) .article-container .article-header img,
+  body:has(a[href$=".bib"]) .article-container .article-banner {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
