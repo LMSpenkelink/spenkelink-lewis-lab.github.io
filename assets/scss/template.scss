@@ -3135,10 +3135,9 @@ body:has(.homepage-hero) footer {
   padding-top: 0 !important;
 }
 
-/* Abstract heading */
-.page-body > .pub .featured-image-wrapper + .article-container h2:first-child {
-  margin-top: 0 !important;
-  margin-bottom: 0.85rem !important;
+/* Abstract heading — spacing before paragraph */
+.page-body > .pub .article-container h2 {
+  margin-bottom: 1.25rem !important;
 }
 
 /* Abstract and article text */
