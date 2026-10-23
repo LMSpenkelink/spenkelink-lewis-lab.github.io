@@ -3044,26 +3044,29 @@ body:has(.homepage-hero) footer {
   transform: translateY(-2px);
 }
 
-/* Featured scientific figure container */
+/* ==========================================
+   FEATURED SCIENTIFIC FIGURE
+   ========================================== */
+
+/* Outer figure container */
 .page-body > .pub .featured-image-wrapper {
+  display: block !important;
+
   width: 100% !important;
   max-width: 900px !important;
 
-  margin: 0 auto 2rem !important;
-  padding: 0 15px !important;
-}
-
-/* Allow the featured figure to expand naturally */
-.page-body > .pub .featured-image-wrapper {
   height: auto !important;
   min-height: 0 !important;
+
+  margin: 0 auto 2.5rem !important;
+  padding: 0 15px !important;
+
   overflow: visible !important;
-  margin-bottom: 2.5rem !important;
 }
 
-/* Remove HugoBlox's fixed image dimensions */
+/* HugoBlox's image sizing wrapper */
 .page-body > .pub .featured-image-wrapper > div {
-  position: relative !important;
+  position: static !important;
 
   width: 100% !important;
   max-width: 100% !important;
@@ -3074,46 +3077,33 @@ body:has(.homepage-hero) footer {
   overflow: visible !important;
 }
 
-/* Ensure the image occupies its actual height */
+/* Scientific figure */
 .page-body > .pub .featured-image-wrapper img {
-  position: relative !important;
+  position: static !important;
 
   display: block !important;
 
   width: 100% !important;
   max-width: 100% !important;
+
   height: auto !important;
   max-height: none !important;
 
   object-fit: contain !important;
 
   margin: 0 auto !important;
+  padding: 0 !important;
+
   border-radius: 10px !important;
 }
 
-/* Keep article content below the figure */
+/* Ensure the abstract follows the figure */
 .page-body > .pub .featured-image-wrapper + .article-container {
   position: relative !important;
   clear: both !important;
 
   margin-top: 0 !important;
 }
-
-/* Preserve complete scientific figures without cropping */
-.page-body > .pub .featured-image-wrapper img {
-  display: block !important;
-
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-
-  object-fit: contain !important;
-
-  margin: 0 auto !important;
-
-  border-radius: 10px !important;
-}
-
 /* Abstract and article text */
 .page-body > .pub .article-style {
   color: #344454 !important;
