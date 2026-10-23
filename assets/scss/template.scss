@@ -2989,7 +2989,10 @@ body:has(.homepage-hero) footer {
   margin-bottom: 1rem !important;
 }
 
-/* Author and publication metadata */
+/* ==========================================
+   AUTHOR AND PUBLICATION METADATA
+   ========================================== */
+
 .page-body > .pub .article-metadata {
   color: #566273 !important;
 
@@ -2997,6 +3000,12 @@ body:has(.homepage-hero) footer {
   line-height: 1.65 !important;
 
   margin-bottom: 1.2rem !important;
+}
+
+/* Add breathing room between authors and date */
+.page-body > .pub .article-metadata .article-date {
+  display: block !important;
+  margin-top: 0.5rem !important;
 }
 
 /* PDF / Cite / DOI button row */
