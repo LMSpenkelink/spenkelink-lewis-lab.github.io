@@ -3002,6 +3002,16 @@ body:has(.homepage-hero) footer {
   margin-bottom: 1.2rem !important;
 }
 
+/* Publication date */
+.page-body > .pub .article-metadata .article-date {
+  display: block !important;
+
+  margin-top: 0.5rem !important;
+
+  font-weight: 600 !important;
+  color: #344454 !important;
+}
+
 /* Add breathing room between authors and date */
 .page-body > .pub .article-metadata .article-date {
   display: block !important;
