@@ -3053,11 +3053,50 @@ body:has(.homepage-hero) footer {
   padding: 0 15px !important;
 }
 
-/* Override HugoBlox's inline 720px figure limit */
+/* Allow the featured figure to expand naturally */
+.page-body > .pub .featured-image-wrapper {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  margin-bottom: 2.5rem !important;
+}
+
+/* Remove HugoBlox's fixed image dimensions */
 .page-body > .pub .featured-image-wrapper > div {
+  position: relative !important;
+
   width: 100% !important;
   max-width: 100% !important;
+
+  height: auto !important;
   max-height: none !important;
+
+  overflow: visible !important;
+}
+
+/* Ensure the image occupies its actual height */
+.page-body > .pub .featured-image-wrapper img {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+  margin: 0 auto !important;
+  border-radius: 10px !important;
+}
+
+/* Keep article content below the figure */
+.page-body > .pub .featured-image-wrapper + .article-container {
+  position: relative !important;
+  clear: both !important;
+
+  margin-top: 0 !important;
 }
 
 /* Preserve complete scientific figures without cropping */
