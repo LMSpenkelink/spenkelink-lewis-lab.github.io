@@ -2955,21 +2955,28 @@ body:has(.homepage-hero) footer {
 }
 
 
+
 // ==========================================
 // INDIVIDUAL PUBLICATION PAGES
 // ==========================================
 
-/*
-  Only target individual publication pages.
-  Do not affect the Publications listing or homepage.
-*/
-
-body:has(a[href$=".bib"]) .article-container {
-  max-width: 900px !important;
+/* Only individual publication pages */
+.page-body > .pub {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
-/* Main publication heading */
-body:has(a[href$=".bib"]) .article-container h1 {
+/* Consistent, wider content column */
+.page-body > .pub .article-container {
+  width: 100% !important;
+  max-width: 900px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Publication title */
+.page-body > .pub .article-container.pt-3 > h1 {
   color: #102b46 !important;
 
   font-size: clamp(1.9rem, 3vw, 2.65rem) !important;
@@ -2979,31 +2986,48 @@ body:has(a[href$=".bib"]) .article-container h1 {
 
   text-align: left !important;
 
-  margin-bottom: 1.1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
 }
 
-/* Author list */
-body:has(a[href$=".bib"]) .article-container .article-metadata {
+/* Author and publication metadata */
+.page-body > .pub .article-metadata {
   color: #566273 !important;
 
   font-size: 0.95rem !important;
   line-height: 1.65 !important;
 
-  margin-bottom: 1.25rem !important;
+  margin-bottom: 1.2rem !important;
 }
 
-/* Publication links: PDF, Cite, DOI */
-body:has(a[href$=".bib"]) .article-container .btn {
+/* PDF / Cite / DOI button row */
+.page-body > .pub .btn-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+
+  gap: 0.6rem !important;
+
+  margin-bottom: 1.5rem !important;
+}
+
+/* Rounded publication buttons */
+.page-body > .pub .btn-links .btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
 
+  padding: 0.55rem 1.1rem !important;
+
+  border: 1px solid #1769c2 !important;
   border-radius: 999px !important;
 
-  padding: 0.5rem 1rem !important;
+  background: #eef4f8 !important;
+  color: #1769c2 !important;
 
   font-size: 0.85rem !important;
   font-weight: 600 !important;
+  line-height: 1.2 !important;
 
   text-decoration: none !important;
 
@@ -3013,35 +3037,54 @@ body:has(a[href$=".bib"]) .article-container .btn {
     transform 0.2s ease;
 }
 
-body:has(a[href$=".bib"]) .article-container .btn:hover {
+.page-body > .pub .btn-links .btn:hover {
+  background: #1769c2 !important;
+  color: #ffffff !important;
+
   transform: translateY(-2px);
 }
 
-/* Featured scientific figure */
-body:has(a[href$=".bib"]) .article-container .article-header img,
-body:has(a[href$=".bib"]) .article-container .article-banner {
+/* Featured scientific figure container */
+.page-body > .pub .featured-image-wrapper {
+  width: 100% !important;
+  max-width: 900px !important;
+
+  margin: 0 auto 2rem !important;
+  padding: 0 15px !important;
+}
+
+/* Override HugoBlox's inline 720px figure limit */
+.page-body > .pub .featured-image-wrapper > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
+
+/* Preserve complete scientific figures without cropping */
+.page-body > .pub .featured-image-wrapper img {
   display: block !important;
 
   width: 100% !important;
-  max-width: 850px !important;
+  max-width: 100% !important;
   height: auto !important;
 
   object-fit: contain !important;
 
-  margin: 1.75rem auto 2rem !important;
+  margin: 0 auto !important;
 
   border-radius: 10px !important;
 }
 
-/* Abstract and main content */
-body:has(a[href$=".bib"]) .article-container .article-style {
+/* Abstract and article text */
+.page-body > .pub .article-style {
   color: #344454 !important;
 
   font-size: 1rem !important;
   line-height: 1.75 !important;
 }
 
-body:has(a[href$=".bib"]) .article-container .article-style h2 {
+/* Section headings */
+.page-body > .pub .article-container h2 {
   color: #102b46 !important;
 
   font-size: 1.5rem !important;
@@ -3054,23 +3097,26 @@ body:has(a[href$=".bib"]) .article-container .article-style h2 {
 /* Mobile */
 @media (max-width: 768px) {
 
-  body:has(a[href$=".bib"]) .article-container {
+  .page-body > .pub {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-body > .pub .article-container {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
   }
 
-  body:has(a[href$=".bib"]) .article-container h1 {
+  .page-body > .pub .article-container.pt-3 > h1 {
     font-size: 1.8rem !important;
   }
 
-  body:has(a[href$=".bib"]) .article-container .article-metadata {
+  .page-body > .pub .article-metadata {
     font-size: 0.9rem !important;
   }
 
-  body:has(a[href$=".bib"]) .article-container .article-header img,
-  body:has(a[href$=".bib"]) .article-container .article-banner {
-    margin-top: 1.25rem !important;
-    margin-bottom: 1.5rem !important;
+  .page-body > .pub .featured-image-wrapper {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 }
-
