@@ -2955,18 +2955,17 @@ body:has(.homepage-hero) footer {
 }
 
 
-
 // ==========================================
 // INDIVIDUAL PUBLICATION PAGES
 // ==========================================
 
-/* Only individual publication pages */
+/* Overall publication page */
 .page-body > .pub {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
 
-/* Consistent, wider content column */
+/* Wider publication layout */
 .page-body > .pub .article-container {
   width: 100% !important;
   max-width: 1100px !important;
@@ -3045,9 +3044,9 @@ body:has(.homepage-hero) footer {
 }
 
 
-/* ==========================================
-   FEATURED SCIENTIFIC FIGURE
-   ========================================== */
+// ==========================================
+// FEATURED SCIENTIFIC FIGURE
+// ==========================================
 
 /* Outer figure container */
 .page-body > .pub .featured-image-wrapper {
@@ -3061,7 +3060,7 @@ body:has(.homepage-hero) footer {
   min-height: 0 !important;
   max-height: none !important;
 
-  margin: 0 auto 0.75rem !important;
+  margin: 0 auto 0 !important;
   padding: 0 15px !important;
 
   overflow: visible !important;
@@ -3081,7 +3080,7 @@ body:has(.homepage-hero) footer {
   overflow: visible !important;
 }
 
-/* Scientific figure — normal document flow */
+/* Scientific figure */
 .page-body > .pub .featured-image-wrapper img.featured-image {
   position: static !important;
 
@@ -3101,22 +3100,26 @@ body:has(.homepage-hero) footer {
   border-radius: 10px !important;
 }
 
-/* Abstract must sit below the full figure */
+
+// ==========================================
+// ABSTRACT AND ARTICLE CONTENT
+// ==========================================
+
+/* Keep the abstract directly below the figure */
 .page-body > .pub .featured-image-wrapper + .article-container {
   display: flow-root !important;
   clear: both !important;
 
   position: relative !important;
+
   margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .page-body > .pub .featured-image-wrapper {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-    margin-bottom: 0.75rem !important;
-  }
+/* Abstract heading */
+.page-body > .pub .featured-image-wrapper + .article-container h2:first-child {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* Abstract and article text */
@@ -3127,18 +3130,22 @@ body:has(.homepage-hero) footer {
   line-height: 1.75 !important;
 }
 
-/* Section headings */
+/* Other section headings */
 .page-body > .pub .article-container h2 {
   color: #102b46 !important;
 
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   font-weight: 700 !important;
 
-  margin-top: 2rem !important;
-  margin-bottom: 0.75rem !important;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Mobile */
+
+// ==========================================
+// INDIVIDUAL PUBLICATION PAGES — MOBILE
+// ==========================================
+
 @media (max-width: 768px) {
 
   .page-body > .pub {
@@ -3162,5 +3169,13 @@ body:has(.homepage-hero) footer {
   .page-body > .pub .featured-image-wrapper {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
+
+    margin-bottom: 0 !important;
+  }
+
+  .page-body > .pub .btn-links .btn {
+    padding: 0.5rem 0.9rem !important;
+    font-size: 0.8rem !important;
   }
 }
+
