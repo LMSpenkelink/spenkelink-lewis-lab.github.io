@@ -3197,3 +3197,181 @@ body:has(.homepage-hero) footer {
   }
 }
 
+
+// ==========================================
+// INDIVIDUAL NEWS ARTICLES
+// ==========================================
+
+/* Overall article layout */
+.page-body > article.article {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+/* Match the 1100px publication layout */
+.page-body > article.article .article-container {
+  width: 100% !important;
+  max-width: 1100px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Bold navy article title */
+.page-body > article.article .article-container.pt-3 > h1 {
+  color: #102b46 !important;
+
+  font-size: clamp(1.9rem, 3vw, 2.65rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em;
+
+  text-align: left !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Article metadata */
+.page-body > article.article .article-metadata {
+  color: #566273 !important;
+
+  font-size: 0.95rem !important;
+  line-height: 1.65 !important;
+
+  margin-bottom: 1.2rem !important;
+}
+
+/* Date styling */
+.page-body > article.article .article-date {
+  display: block !important;
+
+  color: #344454 !important;
+  font-weight: 600 !important;
+
+  margin-top: 0.5rem !important;
+}
+
+/* Featured image container */
+.page-body > article.article .featured-image-wrapper {
+  display: flow-root !important;
+  position: relative !important;
+
+  width: 100% !important;
+  max-width: 1100px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  margin: 0 auto 1.5rem !important;
+  padding: 0 15px !important;
+
+  overflow: visible !important;
+}
+
+/* Inner HugoBlox image wrapper */
+.page-body > article.article .featured-image-wrapper > div {
+  position: relative !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  overflow: visible !important;
+}
+
+/* Full-width image without cropping */
+.page-body > article.article .featured-image-wrapper img.featured-image {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  border-radius: 10px !important;
+}
+
+/* Keep article text below the image */
+.page-body > article.article .featured-image-wrapper + .article-container {
+  display: flow-root !important;
+  clear: both !important;
+
+  position: relative !important;
+
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Main article text */
+.page-body > article.article .article-style {
+  color: #344454 !important;
+
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+/* Paragraph spacing */
+.page-body > article.article .article-style p {
+  margin-bottom: 1.25rem !important;
+}
+
+/* Section headings */
+.page-body > article.article .article-style h2 {
+  color: #102b46 !important;
+
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.85rem !important;
+}
+
+
+// ==========================================
+// INDIVIDUAL NEWS ARTICLES — MOBILE
+// ==========================================
+
+@media (max-width: 768px) {
+
+  .page-body > article.article {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-body > article.article .article-container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .page-body > article.article .article-container.pt-3 > h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .page-body > article.article .article-metadata {
+    font-size: 0.9rem !important;
+  }
+
+  .page-body > article.article .featured-image-wrapper {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+
+    margin-bottom: 1rem !important;
+  }
+
+  .page-body > article.article .article-style {
+    font-size: 0.95rem !important;
+  }
+}
