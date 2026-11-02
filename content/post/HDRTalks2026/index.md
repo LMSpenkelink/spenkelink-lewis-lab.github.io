@@ -3,7 +3,7 @@
 title: "Via and Declan win Best Talk awards at the HDR Conference"
 
 date: 2026-11-02
-publishDate: 2026-11-03
+publishDate: 2026-11-02
 
 summary: "Congratulations to Via and Declan, who both received Best Talk awards at the 2026 HDR Conference!"
 
